@@ -15,5 +15,5 @@ You can find my email and social media at https://admin.thehumanserver.org. Soci
 ### Currently working on?
 Translating various things, refining the UI, and filling out the media section
 <div align="center">
-  <img src="https://i.imgur.com/5JSpsyI.png">
+  <img src="https://ik.imagekit.io/closesttopurple/ths-icon.png">
 </div>

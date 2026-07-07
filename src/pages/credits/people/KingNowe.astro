@@ -1,33 +1,10 @@
 ---
+
 import TextLayout from '@layouts/TextLayout.astro';
 ---
 
 <TextLayout>
-</TextLayout>
-<title>More Information</title>
-<style>
-        @media screen and (orientation: portrait)
-{
-img{
-    width: 80%;
-    height: 80%;
-    }
-    .title{
-        text-align:left;
-    }
-}
-
-@media screen and (orientation: landscape)
-{
-img{
-    width: 375px;
-    height: 250px;
-}
-}
-#cen{
-    text-align: center;
-}
-    body {
+</TextLayout><style>    body {
   background-color: $bgColor;
   background-size: 6px 6px;
   background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
@@ -114,7 +91,50 @@ img{
     </ul>
   </div>
 </nav>
-<img src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-novellas-full.avif?updatedAt=1781783692882">
-<p class="title" id="cen">Where to find it?</p>
-<p class="para">You can read them <a href="/stories/nier-automata/novellas"><u>here.</u></a></p>
-<p class="menu" id="backButton"><a href="/series-guide/ths-guide-main">Back</a></p>
+<title>King Nowe</title>
+<style>
+  @media screen and (orientation: landscape){
+    .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr) 0.6fr 1.4fr;
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 1 / 5 / 6; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 4 / 3 / 6; }
+
+  }
+  @media screen and (orientation: portrait){
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr) 0.6fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 1 / 5 / 6;}
+.div2 { grid-area: 1 / 1 / 2 / 3; margin:3%;}
+.div3 { grid-area: 2 / 1 / 3 / 3; margin:3%;}
+.div4 { grid-area: 5 / 1 / 6 / 3; margin:3%;}
+
+  }
+
+
+.title{
+    font-size: 2rem;
+    
+}
+</style>
+<p class="title" style="font-size: 3rem;">King Nowe</p>
+ <div class="parent">
+<div class="div1"><p class="title">Socials:</p><p class ="menu" style="font-size: 180%;"><a href="https://www.youtube.com/@MightyKintama"><u>YouTube</u></a></p></div>
+<div class="div2"><p class="title">Worked on:</p></div>
+<div class="div3"><p class="para" style="font-size: 140%;">Wrote around 6 lines of code.</p></div>
+<div class="div4"><img style="padding: 16px;" src="https://ik.imagekit.io/closesttopurple/bg/d3/king_nowe_dragon_gender.png"></div>
+</div> 
+<p class="menu" id="backButton"><a href="/credits/people">Back</a></p>

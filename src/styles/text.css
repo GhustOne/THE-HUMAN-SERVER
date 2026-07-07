@@ -71,15 +71,7 @@ transform: scale(0.98);
     to {opacity: 1};
 
   }
-   .menu-c{
-    animation-name: bg;
-    animation-duration: .5s;
-   }
-     @keyframes bg {
-    from {opacity: 0};
-    to {opacity: 1};
 
-  }
   @media  (prefers-color-scheme: dark){
     .words {
     display: block;
@@ -858,4 +850,8 @@ text-decoration:none; }
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.img-special{
+        animation-name: art;
+      animation-duration: 1.2s;
 }
