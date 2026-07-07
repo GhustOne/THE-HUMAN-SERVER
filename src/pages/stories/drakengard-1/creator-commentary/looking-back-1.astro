@@ -59,7 +59,7 @@ import TextLayout from '@layouts/TextLayout.astro';
   <span></span>
 
   <!-- logo -->
-  <a href="/" class="menu-logo">
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
     <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
   </a>
 
@@ -67,39 +67,39 @@ import TextLayout from '@layouts/TextLayout.astro';
   <div class="menubar">
     <ul>
       <li>
-        <a href="/stories">
+        <a data-astro-prefetch="load" href="/stories">
           Stories
         </a>
       </li>
       <li>
-        <a href="/series-guide/ths-guide">
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
           Series Guide
         </a>
       </li>
       <li>
-        <a href="/media">
+        <a data-astro-prefetch="load" href="/media">
           Media
         </a>
       </li>
       <li>
-        <a href="/credits">
+        <a data-astro-prefetch="load" href="/credits">
           Credits
         </a>
       </li>
             <li>
-        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
           Reader
         </a>
       </li>
             <li>
-        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="/bug-report">
+        <a data-astro-prefetch="load" href="/bug-report">
           Bug Report
         </a>
       </li>
@@ -108,7 +108,7 @@ import TextLayout from '@layouts/TextLayout.astro';
 </nav>
 <p style="margin-top: 1cm; font-size: 300%;">Looking Back 1</p>
 <img src="https://ik.imagekit.io/closesttopurple/bg/d1/looking-back-1-full.png">
-<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a href="/credits/people/barnabism">Barnabism</a></p>
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a data-astro-prefetch="load" href="/credits/people/barnabism">Barnabism</a></p>
 <p class="title">The World of Drakengard</p>
 <p class="para">Note: I was asked to write a retrospective on Drakengard, so I did, but ended up writing more than two times the amount of characters I was told. I had no other choice but to cut it out, but I hope this will be satisfactory enough that you can read and imagine what was lost. So now, without further ado...</p>
 <p class="title">— Yoko Taro (Director of Drakengard)</p>
@@ -143,4 +143,4 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="para">(This has been omitted to reduce the number of characters.)</p>
 <p class="para">I think the world is overflowing with situations and circumstances that can't be controlled unconsciously.</p>
 <p class="para">That is all. ​</p>
-<p class="menu" id="backButton"><a href="/stories/drakengard-1/creator-commentary">Back</a></p>
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories/drakengard-1/creator-commentary">Back</a></p>

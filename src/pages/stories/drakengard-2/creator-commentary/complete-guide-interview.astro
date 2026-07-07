@@ -57,7 +57,7 @@ import TextLayout from '@layouts/TextLayout.astro';
   <span></span>
 
   <!-- logo -->
-  <a href="/" class="menu-logo">
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
     <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
   </a>
 
@@ -65,39 +65,39 @@ import TextLayout from '@layouts/TextLayout.astro';
   <div class="menubar">
     <ul>
       <li>
-        <a href="/stories">
+        <a data-astro-prefetch="load" href="/stories">
           Stories
         </a>
       </li>
       <li>
-        <a href="/series-guide/ths-guide">
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
           Series Guide
         </a>
       </li>
       <li>
-        <a href="/media">
+        <a data-astro-prefetch="load" href="/media">
           Media
         </a>
       </li>
       <li>
-        <a href="/credits">
+        <a data-astro-prefetch="load" href="/credits">
           Credits
         </a>
       </li>
             <li>
-        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
           Reader
         </a>
       </li>
             <li>
-        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="/bug-report">
+        <a data-astro-prefetch="load" href="/bug-report">
           Bug Report
         </a>
       </li>
@@ -106,7 +106,7 @@ import TextLayout from '@layouts/TextLayout.astro';
 </nav>
 <p style="margin-top: 1cm; font-size: 300%;"><strong>Complete Guide Interview:</strong></p>
 <p class="title-special title-box">This interview was released 2005/08/26.</p>
-<p style="margin-top: 0.4cm; font-size: 200%;">Translator: closesttopurple<br>Source: <a href="/series-guide/ths-guide/dod-2-complete-edition"><u>here.</u></a><br>Note: American spellings used, for general audiences (regrettably).</p>
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: closesttopurple<br>Source: <a data-astro-prefetch="load" href="/series-guide/ths-guide/dod-2-complete-edition"><u>here.</u></a><br>Note: American spellings used, for general audiences (regrettably).</p>
 <div class="why-is-this-a-problem">
 <div class="over"><img src="https://ik.imagekit.io/closesttopurple/bg/d1/c-001.png"></div>
 <p class="title-special title-box">Pictured: Akira Yasui, Kimihiko Fujisaka, Taro Hasegawa, and Takamasa Shiba.<br>Photographer: Jun Nakasuji, Interview text by Kumiko Wakamatsu.</p>
@@ -158,10 +158,10 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="title-special title-box">Please tell us about the protagonist, and other unique characters.</p>
 <p class="para"><b>Takamasa Shiba</b> - To be honest, when making Nowe, there were parts that I thought everyone would dislike.</p>
 <p class="para"><b>Akira Yasui</b> - Even so, as the protagonist, there are still some parts that are difficult to understand.</p>
-<p class="para"><b>Takamasa Shiba</b> - That's right. I think he's a pretty modern protagonist. Because of that, when he entered the world of "DoD"<sup id="editor-1a"><a href="#editor-1b" style="color:rgb(190, 247, 255);"><small>[1]</small></a></sup>, he seemed very strange. Everyone says he's self-centered a lot, and that's exactly right. Out of everyone, Nowe is probably the worst guy (laughs). But, that's what the goal was...</p>
+<p class="para"><b>Takamasa Shiba</b> - That's right. I think he's a pretty modern protagonist. Because of that, when he entered the world of "DoD"<sup id="editor-1a"><a data-astro-prefetch="load" href="#editor-1b" style="color:rgb(190, 247, 255);"><small>[1]</small></a></sup>, he seemed very strange. Everyone says he's self-centered a lot, and that's exactly right. Out of everyone, Nowe is probably the worst guy (laughs). But, that's what the goal was...</p>
 <p class="title-special title-box">Nowe feels like a character who suffers a lot. That, and he's always worried and searching for answers...</p>
 <p class="para"><b>Takamasa Shiba</b> - In a way, Nowe is an empty character. He's just physically strong. If Legna says something, you do what he says. If you're with the Knights of the Seal, you do what they do. If Manah appears, you stick to her...</p>
-<p class="para"><b>Taro Hasegawa</b> - He is a "New Breed"<sup id="editor-2a"><a href="#editor-2b"a style="color:rgb(190, 247, 255);"><small>[2]</small></a></sup>, after all (laughs).</p>
+<p class="para"><b>Taro Hasegawa</b> - He is a "New Breed"<sup id="editor-2a"><a data-astro-prefetch="load" href="#editor-2b"a style="color:rgb(190, 247, 255);"><small>[2]</small></a></sup>, after all (laughs).</p>
 <p class="para"><b>Takamasa Shiba</b> - If everyone dislikes that part, then that was the goal (laughs).</p>
 <p class="title-special title-box">Is his "emptiness" the reason he doesn't speak for himself? </p>
 <p class="para"><b>Akira Yasui</b> - That's right. In this story, to the normal people, Nowe and Manah are seen as "evil, world destroyers". From their point of view, they don't know whether what they're doing is right or wrong.</p>
@@ -206,7 +206,7 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="para"><b>Akira Yasui</b> - We talked about how Nowe was born, and truthfully, it was Inuart and Furiae fusing in the bone casket... So, Inuart's pact mark with the black dragon had become Nowe's mark, inside the egg. So, Nowe isn't actually in a pact. The mark on his back are his wings, which are moreso like an organ.</p>
 <p class="para"><b>Kimihiko Fujisaka</b> - It's the same as any other part, like your internal organs or arm. Nowe isn't human, so it's just a "New Breed" thing. That, and the mark looks like a pact mark but isn't.</p>
 <p class="title-special title-box">There's a lot of mystery regarding Gismor's pact and his price...</p>
-<p class="para"><b>Akira Yasui</b> - His pact beast is called a "Shade", and it's a dark spirit<sup id="editor-3a"><a href="#editor-1b" style="color:rgb(190, 247, 255);"><small>[3]</small></a></sup>. And for that, his pact price was his human body. Frankly, when his armor comes off, he has a gaseous body. He's someone with a strong ego. Because he felt like the strongest and most important person, his body became the pact price. And, Gismor's entirely black because all of his skin is the pact mark. Despite having no body, the gaseous pact mark retains his human shape. In everyday life, he covers his skin to hide the gas. So, that's why he always has a poor complexion (laughs).</p>
+<p class="para"><b>Akira Yasui</b> - His pact beast is called a "Shade", and it's a dark spirit<sup id="editor-3a"><a data-astro-prefetch="load" href="#editor-1b" style="color:rgb(190, 247, 255);"><small>[3]</small></a></sup>. And for that, his pact price was his human body. Frankly, when his armor comes off, he has a gaseous body. He's someone with a strong ego. Because he felt like the strongest and most important person, his body became the pact price. And, Gismor's entirely black because all of his skin is the pact mark. Despite having no body, the gaseous pact mark retains his human shape. In everyday life, he covers his skin to hide the gas. So, that's why he always has a poor complexion (laughs).</p>
 <p class="title-special title-box">How did you decide on Caim's design?</p>
 <p class="para"><b>Kimihiko Fujisaka</b> - in "2", Caim would be around 40 years old. To avoid being unrecognisable, we just gave him longer hair. </p>
 <p class="title-special title-box">Which characters are everyone attached to?</p>
@@ -230,7 +230,7 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="title-special title-box">What particulars do you think about when designing the monsters?</p>
 <p class="para"><b>Taro Hasegawa</b> - When drawing, I always make sure to put something silly in. Without it, killing them would feel too realistic and tragic. A lot of "hobgoblins" appear, and I purposefully made their butts hairless, like a monkey. So, when they run away, you end up seeing their butt. It makes you want to hit it (laughs).</p>
 <p class="title-special title-box">What about the weapon designs?</p>
-<p class="para"><b>Kimihiko Fujisaka</b> - I drew all of the main characters' weapons. Hasegawa did about 30% of the other weapons, whilst people who worked on the previous game did about 70% of them. But, all of the "<a href="https://wiki.thehumanserver.org/index.php/Drakengard_2/Weapons">seal</a>" weapons were drawn by Hasegawa.</p>
+<p class="para"><b>Kimihiko Fujisaka</b> - I drew all of the main characters' weapons. Hasegawa did about 30% of the other weapons, whilst people who worked on the previous game did about 70% of them. But, all of the "<a data-astro-prefetch="load" href="https://wiki.thehumanserver.org/index.php/Drakengard_2/Weapons">seal</a>" weapons were drawn by Hasegawa.</p>
 <p class="para"><b>Taro Hasegawa</b> - That's right, I drew the "seal" weapons. There was more background information in the beginning.</p>
 <p class="para"><b>Akira Yasui</b> - I remember asking you to sketch something the "Goddess" motif. Each weapon had something valuable put into them. And so, each of us wanted to make them based on the characters. For a spear, it would be based on Eris, and this one was based on Angelus.</p>
 <p style="margin-top: 0.4cm; font-size: 165%;"><br>The World of "DOD2's" 2D Illustrations, by Kimihiko Fujisaka<br><br></p>
@@ -259,7 +259,7 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p style="margin-top: 0.4cm; font-size: 165%;"><br>The special music of "DOD2".<br><br></p>
 <p class="title-special title-box">I feel like there was a lot of work put into the music this time.</p>
 <p class="para"><b>Takamasa Shiba</b> - From the start, we had asked a non game-developer to handle the music. I was wondering about who would make it, and then I thought about how if someone was able to make good pop music, they could make good game music. I thought of Ryoki Matsumoto, who composed for Nakashima Mika's "Yuki no Hana", and how he would do a great job. And so, while collecting information about Matsuomoto on the web, I found his email address. I immediately sent him a greeting. AFter around an hour, I got a phone call. They wanted to hear the story, so we met up.</p>
-<p class="title-special title-box">Do you have anything to say about the main theme, Hitori?<sup id="editor-4a"><a href="#editor-4b" style="color:rgb(190, 247, 255);"><small>[4]</small></a></sup></p>
+<p class="title-special title-box">Do you have anything to say about the main theme, Hitori?<sup id="editor-4a"><a data-astro-prefetch="load" href="#editor-4b" style="color:rgb(190, 247, 255);"><small>[4]</small></a></sup></p>
 <p class="para"><b>Takamasa Shiba</b> - I commissioned the piece. I asked Satomi, the lyricist behind "Hitori" and the previous song, "Yuki no Hana". And, I told Matsumoto everything about the game and it's story. The finished lyrics included words that relate to the game, such as "red" or "black". And so, "Hitori" can be about Nowe or Caim.</p>
 <p class="title-special title-box">The scene with Caim and Angelus was very moving, right?</p>
 <p class="para"><b>Takamasa Shiba</b> - Everyone was making comments comments about how it made them cry, it made me very happy... All went according to plan (laughs).</p>
@@ -268,14 +268,14 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="para"><b>Kimihiko Fujisaka</b> - There are things you can't see until the 2nd and 3rd endings. For the sake of seeing everything, please strike your (many) enemies down. Please look at the drawings!!</p>
 <p class="para"><b>Taro Hasegawa</b> - A lot of people worked on the monsters, so please chase them and kill them or shoot them down. Please enjoy their movements and modelling.</p>
 <p class="para"><b>Akira Yasui</b> - As "2" is a sequel, we wanted to perfect the game as much as we could. We thought about the good and bad of the previous game a lot. If everyone thinks this game is interesting, then it was worth making. Please continue to play until the end!</p>
-<p class="para"><b>Takamasa Shiba</b> - While "2" exists because of "1", we made it so that you can enjoy "2" without playing "1".<sup id="editor-5a"><a href="#editor-5b" style="color:rgb(190, 247, 255);"><small>[5]</small></a></sup>For "2", we wanted to refine the previous game. For example, on the gameplay side of things, it was definitely rough. We also wanted to reign in the story, which was very wild. Naturally, we can't offer everything, but we think the price is worth it. I'm unsure about whether or not there'll be a sequel, but I personally want it. A potential sequel is dependent on everyone playing the game. So, everyone, please play "2"!</p>
+<p class="para"><b>Takamasa Shiba</b> - While "2" exists because of "1", we made it so that you can enjoy "2" without playing "1".<sup id="editor-5a"><a data-astro-prefetch="load" href="#editor-5b" style="color:rgb(190, 247, 255);"><small>[5]</small></a></sup>For "2", we wanted to refine the previous game. For example, on the gameplay side of things, it was definitely rough. We also wanted to reign in the story, which was very wild. Naturally, we can't offer everything, but we think the price is worth it. I'm unsure about whether or not there'll be a sequel, but I personally want it. A potential sequel is dependent on everyone playing the game. So, everyone, please play "2"!</p>
 <p class="title-special title-box">Thank you all for taking the time out of your day to join us.</p>
 
 <p style="margin-top: 0.4cm; font-size: 165%;" id="push">Notes:<br><br></p>
-    <p class="para"><sup id="editor-1b" style="color:rgb(190, 247, 255);"><a href="#editor-1a">[1]</a></sup>In Japanese, the series can be shortened as "ドラッグ", which is the equivalent of western fans saying DoD. It translates to drugs, but is pronounced as dough-rag-oo. This is in reference to the Japanese title, ドラッグオンドラグーン, pronounced as dough-rag-oo-own dough-rag(silent g)-goon.
+    <p class="para"><sup id="editor-1b" style="color:rgb(190, 247, 255);"><a data-astro-prefetch="load" href="#editor-1a">[1]</a></sup>In Japanese, the series can be shortened as "ドラッグ", which is the equivalent of western fans saying DoD. It translates to drugs, but is pronounced as dough-rag-oo. This is in reference to the Japanese title, ドラッグオンドラグーン, pronounced as dough-rag-oo-own dough-rag(silent g)-goon.
 </p>
-<p class="para"><sup id="editor-2b" style="color:rgb(190, 247, 255);"><a href="#editor-2a">[2]</a></sup>In Japanese, they use the term "真人類". This literally translates to "True Human", but I'm fairly certain "New Breed" is the official localisation, so...<br><br>Anyway, it's just interesting to note.</p>
-<p class="para"><sup id="editor-3b" style="color:rgb(190, 247, 255);"><a href="#editor-3a">[3]</a></sup>In Japanese, the term "精霊" is used. It means something along the lines of a spirit, a soul, or a ghost. I just thought it was worth noting based on interpretation because of what "Shade" means in relation to other lore terms...</p>
-<p class="para"><sup id="editor-4b" style="color:rgb(190, 247, 255);"><a href="#editor-4a">[4]</a></sup>In Japanese, it's called "ひとり" and by "中島美嘉". For English fans (the only ones on this site lol), it will be easier to search it up that way. I didn't want to search that hard, but I was able to find this <a href="https://www.youtube.com/watch?v=iCItH8Z4eh4"><u>link.</u></a> It's quite a good song.</p>
-<p class="para"><sup id="editor-5b" style="color:rgb(190, 247, 255);"><a href="#editor-5a">[5]</a></sup>It's nothing important, I just felt this sentence was worded in a funny way. I didn't add the strange amount of "1"s and "2"s, I swear! Look!</p><div class="over"><img src="https://ik.imagekit.io/closesttopurple/bg/d1/a7.png"></div>
-<p class="menu" id="backButton"><a href="/stories/drakengard-2/creator-commentary">Back</a></p>
+<p class="para"><sup id="editor-2b" style="color:rgb(190, 247, 255);"><a data-astro-prefetch="load" href="#editor-2a">[2]</a></sup>In Japanese, they use the term "真人類". This literally translates to "True Human", but I'm fairly certain "New Breed" is the official localisation, so...<br><br>Anyway, it's just interesting to note.</p>
+<p class="para"><sup id="editor-3b" style="color:rgb(190, 247, 255);"><a data-astro-prefetch="load" href="#editor-3a">[3]</a></sup>In Japanese, the term "精霊" is used. It means something along the lines of a spirit, a soul, or a ghost. I just thought it was worth noting based on interpretation because of what "Shade" means in relation to other lore terms...</p>
+<p class="para"><sup id="editor-4b" style="color:rgb(190, 247, 255);"><a data-astro-prefetch="load" href="#editor-4a">[4]</a></sup>In Japanese, it's called "ひとり" and by "中島美嘉". For English fans (the only ones on this site lol), it will be easier to search it up that way. I didn't want to search that hard, but I was able to find this <a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=iCItH8Z4eh4"><u>link.</u></a> It's quite a good song.</p>
+<p class="para"><sup id="editor-5b" style="color:rgb(190, 247, 255);"><a data-astro-prefetch="load" href="#editor-5a">[5]</a></sup>It's nothing important, I just felt this sentence was worded in a funny way. I didn't add the strange amount of "1"s and "2"s, I swear! Look!</p><div class="over"><img src="https://ik.imagekit.io/closesttopurple/bg/d1/a7.png"></div>
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories/drakengard-2/creator-commentary">Back</a></p>

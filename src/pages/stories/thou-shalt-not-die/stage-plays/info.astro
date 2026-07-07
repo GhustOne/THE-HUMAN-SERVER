@@ -44,7 +44,7 @@ import TextLayout from '@layouts/TextLayout.astro';
   <span></span>
 
   <!-- logo -->
-  <a href="/" class="menu-logo">
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
     <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
   </a>
 
@@ -52,39 +52,39 @@ import TextLayout from '@layouts/TextLayout.astro';
   <div class="menubar">
     <ul>
       <li>
-        <a href="/stories">
+        <a data-astro-prefetch="load" href="/stories">
           Stories
         </a>
       </li>
       <li>
-        <a href="/series-guide/ths-guide">
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
           Series Guide
         </a>
       </li>
       <li>
-        <a href="/media">
+        <a data-astro-prefetch="load" href="/media">
           Media
         </a>
       </li>
       <li>
-        <a href="/credits">
+        <a data-astro-prefetch="load" href="/credits">
           Credits
         </a>
       </li>
             <li>
-        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
           Reader
         </a>
       </li>
             <li>
-        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="/bug-report">
+        <a data-astro-prefetch="load" href="/bug-report">
           Bug Report
         </a>
       </li>
@@ -98,4 +98,4 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="para">Thou Shalt Not DIE ZERO_Kai (I got it wrong on the pic) is the first stage play released, and it's a prequel to the manga by 3 years.</p>
 <p class="para">Thou Shalt Not DIE ZERO_Kai "Red End" and "Black End" are alternate endings to the prior stage play, with it being based on which one you went to.</p>
 
-<p class="menu" id="backButton"><a href="/stories/thou-shalt-not-die/stage-plays">Back</a></p>
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories/thou-shalt-not-die/stage-plays">Back</a></p>

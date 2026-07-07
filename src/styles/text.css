@@ -1,4 +1,6 @@
-
+p{
+  font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
   img {
     margin-left: auto;
     margin-right: auto;
@@ -63,13 +65,16 @@ transform: scale(0.98);
       margin-left: auto;
       margin-right: auto;
       margin-bottom:0.3cm;
-      animation-name: art;
       animation-duration: 1.2s;
   }
        @keyframes art {
     from {opacity: 0};
     to {opacity: 1};
 
+  }
+  .background-body{
+        animation-name: art;
+      animation-duration: 1.2s;
   }
 
   @media  (prefers-color-scheme: dark){

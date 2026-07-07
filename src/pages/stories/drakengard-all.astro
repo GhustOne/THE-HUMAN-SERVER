@@ -13,7 +13,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
   <span></span>
 
   <!-- logo -->
-  <a href="/" class="menu-logo">
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
     <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
   </a>
 
@@ -21,39 +21,39 @@ import TextLayout from "@/layouts/TextLayout.astro"
   <div class="menubar">
     <ul>
       <li>
-        <a href="/stories">
+        <a data-astro-prefetch="load" href="/stories">
           Stories
         </a>
       </li>
       <li>
-        <a href="/series-guide/ths-guide">
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
           Series Guide
         </a>
       </li>
       <li>
-        <a href="/media">
+        <a data-astro-prefetch="load" href="/media">
           Media
         </a>
       </li>
       <li>
-        <a href="/credits">
+        <a data-astro-prefetch="load" href="/credits">
           Credits
         </a>
       </li>
             <li>
-        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
           Reader
         </a>
       </li>
             <li>
-        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </li>
     </ul>
     <ul>
       <li>
-        <a href="/bug-report">
+        <a data-astro-prefetch="load" href="/bug-report">
           Bug Report
         </a>
       </li>
@@ -62,7 +62,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
 </nav>
 <title>Drakengard (All)</title>
 <style>
-    body{
+    body {
 @media screen and (orientation: portrait) and (prefers-color-scheme: dark)
 {
     background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-all-portrait.avif?updatedAt=1755425287875");
@@ -98,9 +98,9 @@ import TextLayout from "@/layouts/TextLayout.astro"
     }
     </style>
     <div class="over" style="max-width: 318px;">
-<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/stories/drag-on-dragoon-history/dod-history"class="menu-c">DRAG-ON DRAGOON HISTORY</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/stories/drag-on-dragoon-history/dod-history"class="menu-c">DRAG-ON DRAGOON HISTORY</a></p>
 </div>
-<p class="menu" id="backButton"><a href="/stories">Back</a></p>
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories">Back</a></p>
 <link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dodhist.avif" as="image" type="image/avif" />
 <link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/8bitdod.avif" as="image" type="image/avif" />
 <!--Above is for dod-history preloading-->

@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({ 
+  prefetch: true ,
   integrations: [sitemap()],
     site: 'https://thehumanserver.com',
     vite: {
