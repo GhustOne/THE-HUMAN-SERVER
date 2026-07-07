@@ -4,8 +4,9 @@ import { fileURLToPath } from "node:url";
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
-export default defineConfig({
+export default defineConfig({ 
   integrations: [sitemap()],
+    site: 'https://thehumanserver.com',
     vite: {
     resolve: {
       alias: {
