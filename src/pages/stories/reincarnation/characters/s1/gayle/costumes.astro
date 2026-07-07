@@ -1,0 +1,208 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Gayle's Costumes</title><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+    .img-special{
+        -webkit-filter: brightness(100%);
+        padding: 0%;
+        max-width: 144px;
+        max-height: 144px;
+    }
+    img:hover{
+        -webkit-filter: brightness(70%);
+        transform: scale(98%);
+    }
+
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+</style>
+<p style="margin-top: 1cm; font-size: 300%;">Rion's Costumes</p>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/wounded-hunter"><img class="img-special" src="https://i.imgur.com/E1fL1L8.png" loading="lazy"><p class="title">Wounded Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/dissenting-hunter"><img class="img-special" src="https://i.imgur.com/vTWQkSS.png" loading="lazy"><p class="title">Dissenting Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/guardian-hunter"><img class="img-special" src="https://i.imgur.com/VNoZ1Xo.png" loading="lazy"><p class="title">Guardian Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/summer-hunter"><img class="img-special" src="https://i.imgur.com/usIwqzY.png" loading="lazy"><p class="title">Summer Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/yuletide-hunter"><img class="img-special" src="https://i.imgur.com/3LeRTOS.png" loading="lazy"><p class="title">Yuletide Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abstract-hunter"><img class="img-special" src="https://i.imgur.com/E9FkYeX.png" loading="lazy"><p class="title">Abstract Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/bloody-hunter"><img class="img-special" src="https://i.imgur.com/Kf2LVcX.png" loading="lazy"><p class="title">Bloody Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/festive-hunter"><img class="img-special" src="https://i.imgur.com/wPjhXMw.png" loading="lazy"><p class="title">Festive Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/celebratory-hunter"><img class="img-special" src="https://i.imgur.com/WORLS7n.png" loading="lazy"><p class="title">Celebratory Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/fractured-hunter"><img class="img-special" src="https://i.imgur.com/zWeb7sG.png" loading="lazy"><p class="title">Fractured Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/new-years-hunter"><img class="img-special" src="https://i.imgur.com/wID2HTh.png" loading="lazy"><p class="title">New Year's Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abyssal-hunter"><img class="img-special" src="https://i.imgur.com/PwLq3II.png" loading="lazy"><p class="title">Abyssal Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/mechanical-hunter"><img class="img-special" src="https://i.imgur.com/GpKKs3r.png" loading="lazy"><p class="title">Mechanical Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/reborn-contractor"><img class="img-special" src="https://i.imgur.com/4VPoenV.png" loading="lazy"><p class="title">Reborn Contractor</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/f-h-contractor"><img class="img-special" src="https://i.imgur.com/K7eVDf5.png" loading="lazy"><p class="title">Frozen Heart Contractor</p></a></div>
+
+</div>
+</div>
+<br><br><br><br>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters/s1/gayle">Back</a></p>

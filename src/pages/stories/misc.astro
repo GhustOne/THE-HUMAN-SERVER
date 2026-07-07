@@ -1,0 +1,101 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Misc</title>
+<p class="title"><a href="/stories/misc/super-space-time-character-exchange-round-table-in-shinjuku">
+Roundtable<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/misc/roundtable.avif"></a></p>
+    <p class="title"><a href="https://reader.thehumanserver.org/read.html?title=weekly-onore&volume=1&page=1">
+The Weekly Onore! (Fan Work)<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/misc/theweeklyonore.avif"></a></p>
+    <div class="over" style="max-width: 318px;">
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/stories/misc/lord-of-vermillion"class="menu-c">LORD OF VERMILLION</a></p>
+</div>
+<p class="menu" id="backButton"><a href="/stories">Back</a></p>
+<p class="titlesmall">Completely human translated :)</p>

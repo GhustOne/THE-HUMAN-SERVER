@@ -1,0 +1,124 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Saryu's Frozen Heart</title><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<style>
+    img{
+        @media screen and (orientation: portrait)
+{
+    width: 80%;
+    height: 80%;
+}
+    }
+    img{
+        @media screen and (orientation: landscape)
+{
+    width: 35%;
+    height: 35%;
+}
+    }
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<p style="margin-top: 1cm; font-size: 300%;">Saryu's Frozen Heart</p>
+<p style="font-size: 265%;">The Blessing</p>
+
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a href="/credits/people/closesttopurple">closesttopurple</a></p>
+<p class="title">THIS IS A WORK IN PROGRESS TRANSLATION</p>
+<p class="title">Chapter 1</p>
+<p class="para">She awoke to pain that felt like it was ripping her apart.<br>She couldn't open her eyes,  move her body, nor muster the strength to speak. It was as if she was an inanimate object.<br><i>How long have I been like this?</i><br>Slowly, her pain began to subside. As she began to look around, tears started to dribble down her face as she tried to wipe them away.<br>She noticed that the room around her was entirely barren.</p>
+<p class="para"></p>
+<p class="title">Chapter 2</p>
+<p class="para"></p>
+<p class="title">Chapter 3</p>
+<p class="para"></p>
+<p class="title">Chapter 4</p>
+<p class="para"></p>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters/s2/saryu">Back</a></p>

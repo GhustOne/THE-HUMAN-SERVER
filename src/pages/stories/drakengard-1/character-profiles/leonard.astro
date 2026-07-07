@@ -1,0 +1,125 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Leonard's Profile</title>
+<style>
+    img{
+        @media screen and (orientation: portrait)
+{
+    width: 80%;
+    height: 80%;
+}
+    }
+    img{
+        @media screen and (orientation: landscape)
+{
+    width: 35%;
+    height: 35%;
+}
+    }    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<p class="title">Leonard's Profile</p>
+<img src="https://i.imgur.com/tjlPYFS.png">
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a href="/credits/people/kestrel">Kestrel</a></p>
+<p class="title">Characteristics</p>
+<p class="para">Sex: Male</p>
+<p class="para">Age: 32</p>
+<p class="para">Pact Partner: Fairy</p>
+<p class="para">Pact Price: Sight</p>
+<p class="para">Seal Location: Eyeball</p>
+<p class="title">Living quietly as a hermit to avoid conflict</p>
+<p class="para">In the past, due to a certain reason, Leonard left his family to live in the forest, away from the public eye. Then one day, because the Imperial Army was chasing his family, he sheltered his younger brothers and they all lived together. Why he came to live in the forest, even his family did not know. However, surely just as that reason was about to come to light, Leonard lost his brothers—- He would bear a much too heavy cross upon his shoulders.</p>
+<p class="title">ortured by his own unique inclinations</p>
+<p class="para">His reason for leaving his family was—-because he was ashamed of his unique inclinations. With his fastidious personality, choosing the hermit's path seemed the obvious answer to confronting his shame at his perverted disposition, but he was unable to abandon it. Then, the final scandal occurred. While he was in the forest drowning in lust, the Imperial Army came on a raid, and his three younger brothers were slaughtered—-</p>
+<p class="title">His fairy knows all</p>
+<p class="para">With the magnitude of the crime he had committed, Leonard once tried to take his own life, but could not ultimately do it through fear of death. There, Fairy appeared after out his strong "negative emotions" and offered him a pact, arbitrarily forcing the completion of the contract. From that point forward, he was daily abused by the all-knowing Fairy over every little thing, and had to abide with his own committed sins.</p>
+<p class="menu"><a href="/stories/drakengard-1/character-profiles/leonard-novella">Leonard's Novella</a></p>
+<p class="menu" id="backButton"><a href="/stories/drakengard-1/character-profiles">Back</a></p>

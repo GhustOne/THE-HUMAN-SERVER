@@ -1,0 +1,153 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Drag-on Dragoon History</title>
+<style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/dod-history-portrait.avif?updatedAt=1755425286101");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/dod-history-landscape.avif?updatedAt=1755425286091");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/drag-on-dragoon-history-portrait.avif?updatedAt=1755054118027");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/drag-on-dragoon-history-landscape.avif?updatedAt=1755054117829");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    }
+</style>
+
+<p class=title><a href="https://youtu.be/Juk-v2efxFg">
+    DOD History<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dodhist.avif"></a></p>
+    <p class="title"><a href="https://youtu.be/l9bAxD7iIEM">
+    8-Bit DOD<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/d3/8bitdod.avif"></a></p>
+        <div class="over" style="max-width: 318px;">
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/stories/drag-on-dragoon-history/dod-1"class="menu-c">DOD1 PROMOTIONS</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/stories/drag-on-dragoon-history/dod-2"class="menu-c">DOD2 PROMOTIONS</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/stories/drag-on-dragoon-history/nier"class="menu-c">NIER PROMOTIONS</a></p>
+
+</div>
+        <p class="menu" id="backButton"><a href="/stories/drakengard-all">Back</a></p>
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod1prom1.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod1prom2.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod1prom3.avif" as="image" type="image/avif" />
+<!--Above is for dod-1 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom5.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom3.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom6.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom4.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom7.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom1.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/dod2prom2.avif" as="image" type="image/avif" />
+<!--Above is for dod-2 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/nierprom1.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/nierprom2.avif" as="image" type="image/avif" />
+<!--Above is for nier preloading-->

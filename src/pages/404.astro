@@ -1,0 +1,67 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+<TextLayout>
+</TextLayout>
+<title>ERROR.html</title>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/404-portrait.avif?updatedAt=1755425286236");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/404-landscape.avif?updatedAt=1755425286244");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/404-portrait.avif?updatedAt=1755054117833");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/404-landscape.avif?updatedAt=1755054117675");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#Words2{
+    @media (prefers-color-scheme: dark)
+{
+    content:url("https://i.imgur.com/W09X7w8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    @media (prefers-color-scheme: light)
+{
+    content:url("https://i.imgur.com/EtKt206.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    }
+}
+</style>
+
+
+<div class="over"><img id="Words2" style="max-width: 60vw; margin-top: 4rem;"></div>
+<p class="title" #idstyle="font-size: 165 margin-top: 4rem;;">--ERROR: DETECTED DESTINATION NOT FOUND--</p>
+<p class="title">ERROR_LOG.txt SENT TO ■■■■■ ON ■■/■■/■■■■■</p>
+<p class="menu" style="font-size: 250%; text-align: center; margin-top: 4rem;"><a href="/">RETURN.</a></p>

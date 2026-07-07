@@ -1,0 +1,151 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<style>
+
+.para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;    text-indent: 0em;
+    text-align: center;
+
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+      text-indent: 0em;
+    font-size: 135%;
+}
+}
+
+
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>THS's Guide</title>
+
+<p style="margin-top: 1cm; font-size: 250%;">Miscallaneous</p>
+<p id="title1">These are less important, or have little progress in their translations.</p>
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/series-guide/ths-guide/drakengard-java"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-java.avif?updatedAt=1781783692667" loading="lazy"><p class="title">Drakengard Java</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/wwe-backlash""><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/wwe-backlash.avif?updatedAt=1781783693162g" loading="lazy"><p class="title">WWE Backlash</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/nier-gestalt-comic"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/true-biography.avif?updatedAt=1781783693373" loading="lazy"><p class="title">NieR Gestalt Comic</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/yorha-cd-booklet"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/yorha-cd-booklet.avif?updatedAt=1781783693271" loading="lazy"><p class="title">YoRHa CD Booklet</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/nier-automata-long-story-short"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-long-story-short.avif?updatedAt=1781783693464" loading="lazy"><p class="title">Long Story Short</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/sinoalice-the-dark-fable"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/sinoalice-the-dark-fable.avif?updatedAt=1781783692926" loading="lazy"><p class="title">The Dark Fable</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/parrah-noya-music-jamboree"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/parrah-noya.avif?updatedAt=1781783693329" loading="lazy"><p class="title">SINoALICE Music Concert</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/true-biography-of-game-creators"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/true-biography.avif?updatedAt=1781783693373" loading="lazy"><p class="title">True Biography of Game Creators</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/the-girl-and-the-monster-novel"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nierrein-girl-monster.avif?updatedAt=1781783693167" loading="lazy"><p class="title">The Girl and the Monster Novel</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/sinoalice-scrap-book"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/scrapbook.avif?updatedAt=1781783692974" loading="lazy"><p class="title">SINoALICE Scrap Book</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/sinoalice-financial-report"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/financial-report.avif?updatedAt=1781783692549" loading="lazy"><p class="title">SINoALICE Financial Report</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/project-gestalt-recollections"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nierrep-project-gestalt-recollections.avif?updatedAt=1781783693141" loading="lazy"><p class="title">Project Gestalt Recollections</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/live-and-talk"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/tl-pamphlet.avif?updatedAt=1781783693593" loading="lazy"><p class="title">NieR Music Concert Live & Talk</p></a></div>
+<div class="media-card"><a href="/series-guide/ths-guide/nier-re-12024""><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-re-12024.avif?updatedAt=1781783692720" loading="lazy"><p class="title">NieR re:12024</p></a></div>
+
+</div>
+</div>
+<p class="menu" id="backButton"><a href="/series-guide/ths-guide">Back</a></p>

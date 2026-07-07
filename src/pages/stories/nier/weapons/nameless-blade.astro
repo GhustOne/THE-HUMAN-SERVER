@@ -1,0 +1,213 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Nameless Blade</title>
+<style>
+    @media screen and (orientation: landscape) {
+        .container {
+display: grid;
+grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+
+grid-template-columns: 0.5fr 0.5fr;
+margin: 0px auto;
+margin-bottom: 2.5%;
+float:center;
+
+}
+    }
+
+    @media screen and (orientation: portrait) {
+.container {
+display: grid;
+grid-template-areas:
+    "header header"
+    "content content";
+grid-template-columns: 1fr 1fr;
+margin: 0px auto;
+margin-top: 3%;
+margin-bottom: 45%;
+gap: 2.5%;
+}
+    }
+    #icon{
+display:inline-block;
+    }
+.title{
+        margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    font-size: 85%;
+}
+.title-1{
+  font-size: 130%;
+}
+#title-sub{
+  margin-top: 0%;
+  margin-bottom: 0.1cm;
+    font-size: 50%;
+    margin-top: -0.5cm;
+}
+
+#top-right{
+    font-size: 65%;
+    margin-top: 0%;
+}
+.container > div {
+width: 100%;
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.content {
+  grid-area: content;
+background-color: rgba(65, 65, 65, 0.8);
+}
+
+.para{
+    font-size: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+
+}
+    @media screen and (orientation: landscape)
+{
+  .para-1{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align:left;
+    font-size: 110%;
+    margin-top: 0.6cm;
+      border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+}
+}
+
+
+    @media screen and (orientation: portrait)
+{
+  .para-1{
+    margin-right: 8%;
+    margin-left: 8%;
+    text-align:left;
+    font-size: 130%;
+    margin-top: 0.2cm;
+    border: thick solid rgb(58, 58, 58);
+    background-color:rgb(70, 70, 70);
+    padding: 10px;
+    letter-spacing: 1.5px;
+
+}
+}
+  @media screen and (prefers-color-scheme: light){
+    .para-1{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+      .para{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+    .container > div.content {
+  background-color: rgba(207, 207, 207, 0.8);
+}
+  }
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container" id="character">
+<div class="header"><p class="title" style="font-size: 2.4rem; font-weight: 500;">Nameless Blade</p></div>
+
+<div class="content"><p class="title" style="font-size: 2.4rem; font-weight: 500;">Design</p><img src="https://i.imgur.com/RdhMDN8.png"><img src="https://i.imgur.com/pLoVQsT.png"><img src="https://i.imgur.com/Yj2INn9.png"></div>
+</div>
+<p class="title" style="font-size: 2.4rem; font-weight: 500;">Weapon Story</p><h2>Level 3</h2><p class="para-1">Smash. Smash. Smash. Smash.
+<br><br>Sweat rolls down the faces of hardscrabble men as they chip away
+at ironstone, their cheerful singing echoing through the mine.
+<br><br>We are workers. Workers in the mine. Dirty from tip to toe,
+again today we search for iron with all our might.
+<br><br>Smash. Smash. Smash. Smash.</p>
+<h2>Level 2</h2><p class="para-1">Foom. Foom. Foom. Foom.
+<br><br>The sound of women stomping on bellows in the mill.
+<br><br>The sound of iron being gathered from the scorched sands.
+<br><br>We are workers. Workers in the mill. Workers who send wind.
+<br><br>Today, we stomp the bellows again with all our might.
+Lords of steel.
+<br><br>Foom. Foom. Foom. Foom.</p>
+<h2>Level 3</h2><p class="para-1">    Clang. Clang. Clang. Clang.
+<br>The sound of swordsmiths wielding hammers at their forges.
+<br>The ringing of such transformative blows is stunning indeed.
+<br><br>We are swordsmiths. Swordsmiths who bring blades to life.
+Lords of steel.
+<br><br>Clang. Clang. Clang. Clang.</p>
+<h2>Level 4</h2><p class="para-1">Rip. Rip. Rip. Rip.
+<br>The sound of flesh being rent on the battlefield.
+<br>The sound of killing enemies. Killing someone. Killing humans.
+<br>Someone help me. It hurts—it hurts so much. Help me, mommy...
+<br><br>Rip. Rip. Rip. Rip.</p>
+<p class="menu" id="backButton"><a href="/stories/nier/weapons">Back</a></p>

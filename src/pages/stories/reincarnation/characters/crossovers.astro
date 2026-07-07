@@ -1,0 +1,222 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Crossover Costumes</title><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+    .img-special{
+        -webkit-filter: brightness(100%);
+        padding: 0%;
+        max-width: 144px;
+        max-height: 144px;
+    }
+    img:hover{
+        -webkit-filter: brightness(70%);
+        transform: scale(98%);
+    }
+
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+</style>
+<p style="margin-top: 1cm; font-size: 300%;">Crossover Costumes</p>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/praying-battler"><img class="img-special" src="https://i.imgur.com/1fR83ZO.png"><p class="title">Praying Battler</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/shattered-battler"><img class="img-special" src="https://i.imgur.com/zHbK151.png"><p class="title">Shattered Battler</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/alternate-battler"><img class="img-special" src="https://i.imgur.com/sIU4lDB.png"><p class="title">Alternate Battler</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-battler"><img class="img-special" src="https://i.imgur.com/Fib26xO.png"><p class="title">Divergent Battler</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/mock-machine"><img class="img-special" src="https://i.imgur.com/eclwNmG.png"><p class="title">Mock Machine</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/isolated-scanner"><img class="img-special" src="https://i.imgur.com/mTr7Rkk.png"><p class="title">Isolated Scanner</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-scanner"><img class="img-special" src="https://i.imgur.com/YStYnTL.png"><p class="title">Divergent Scanner</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/vengeful-attacker"><img class="img-special" src="https://i.imgur.com/9SEfzZH.png"><p class="title">Vengeful Attacker</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-attacker"><img class="img-special" src="https://i.imgur.com/s8EdsPz.png"><p class="title">Divergent Attacker</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/soulful-lad"><img class="img-special" src="https://i.imgur.com/6mHRvR5.png"><p class="title">Soulful Lad</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-lad"><img class="img-special" src="https://i.imgur.com/egJQ4f6.png"><p class="title">Divergent Lad</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/alternate-lad"><img class="img-special" src="https://i.imgur.com/YuhKdQU.png"><p class="title">Alternate Lad</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/the-aerie-warrior"><img class="img-special" src="https://i.imgur.com/dBWX8sN.png"><p class="title">The Aerie Warrior</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-warrior"><img class="img-special" src="https://i.imgur.com/qtogRaO.png"><p class="title">Divergent Warrior</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/puzzling-oddity"><img class="img-special" src="https://i.imgur.com/sgwcpAq.png"><p class="title">Puzzling Oddity</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-oddity"><img class="img-special" src="https://i.imgur.com/o50tbbW.png"><p class="title">Divergent Oddity</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/progenitor-sister"><img class="img-special" src="https://i.imgur.com/3ny2G1r.png"><p class="title">Progenitor Sister</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/divergent-sister"><img class="img-special" src="https://i.imgur.com/gkLeijz.png"><p class="title">Divergent Sister</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/caged-rebel"><img class="img-special" src="https://i.imgur.com/oUNv6ml.png"><p class="title">Caged Rebel</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/scheming-justice"><img class="img-special" src="https://i.imgur.com/Z1r9IRG.png"><p class="title">Scheming Justice</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/insightful-emperor"><img class="img-special" src="https://i.imgur.com/T6sQ9U1.png"><p class="title">Insightful Emperor</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/crossovers/virtuous-priestess"><img class="img-special" src="https://i.imgur.com/Fa7zL3z.png"><p class="title">Virtuous Princess</p></a></div>
+</div>
+</div>
+
+<div class="over">
+<div class="Guide">
+
+</div>
+</div>
+<br><br><br><br>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters">Back</a></p>

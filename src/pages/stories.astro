@@ -1,0 +1,239 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+<TextLayout>
+</TextLayout>
+
+<title>Stories</title>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/stories-portrait.avif?updatedAt=1755425289656");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/stories-landscape.avif?updatedAt=175542528942");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/stories-portrait.avif?updatedAt=1755054121229");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/stories-landscape.avif?updatedAt=1755054120084");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    }
+
+.para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 105%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 125%;
+}
+}
+.menu{
+  font-size: 135%;
+}
+.menu img{
+  width: 85%;
+  height: 85%;
+  margin-top: 1.5%;
+}
+#back{
+  font-size: 250%;
+}
+.art{
+  margin-top: 0.5%;
+}
+.Guide > img{
+aspect-ratio: 3 / 2;
+}
+.media-card{
+  margin: 2%;
+  margin-bottom: 2.5%;
+  aspect-ratio: 3 / 2;
+
+}
+.img-special{
+  width:  80%;
+  height: 80%;
+  margin-bottom: 2.5%;
+}
+.title{
+  margin-bottom: 2.5%;
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/drakengard-1"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-full.avif" loading="lazy"><p class="title">Drakengard</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-2"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-2-full.avif?updatedAt=1781783692682" loading="lazy"><p class="title">Drakengard 2</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-3"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-3-full.avif?updatedAt=1781783692996" loading="lazy"><p class="title">Drakengard 3</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-all"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-all.avif?updatedAt=1781783693126" loading="lazy"><p class="title">Drakengard (All)</p></a></div>
+<div class="media-card"><a href="/stories/nier"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-gestalt-replicant-full.avif?updatedAt=1781783693107" loading="lazy"><p class="title">NieR</p></a></div>
+<div class="media-card"><a href="/stories/nier-automata"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-full.avif?updatedAt=1781783693242" loading="lazy"><p class="title">NieR:Automata</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-rein.avif?updatedAt=1781783693143" loading="lazy"><p class="title">NieR Re[in]carnation</p></a></div>
+<div class="media-card"><a href="/stories/nier-all"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-all.avif?updatedAt=1781783693211" loading="lazy"><p class="title">NieR (All)</p></a></div>
+<div class="media-card"><a href="/stories/sinoalice"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/sinoalice.avif?updatedAt=1781783693439" loading="lazy"><p class="title">SINoALICE</p></a></div>
+<div class="media-card"><a href="/stories/bakuken"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/bakuken.avif?updatedAt=1781783692360" loading="lazy"><p class="title">Bakuken</p></a></div>
+<div class="media-card"><a href="/stories/thou-shalt-not-die"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/thou-shalt-not-die.avif?updatedAt=1781783692794" loading="lazy"><p class="title">Thou Shalt Not Die </p></a></div>
+<div class="media-card"><a href="/stories/misc"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/misc.avif?updatedAt=1781783692811" loading="lazy"><p class="title">Misc</p></a></div>
+
+</div></div>
+<p class="menu" id="backButton" style="font-size: 250%;"><a href="/">Back</a></p>
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-1-portrait.avif?updatedAt=1755425286081" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-1-landscape.avif?updatedAt=1755425286180" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-1-portrait.avif?updatedAt=1755054117791" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-1-landscape.avif?updatedAt=1755054117929" as="image" type="image/avif" />
+<!--Above is for drakengard preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-2-portrait.avif?updatedAt=1755425286439" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-2-landscape.avif?updatedAt=1755425286399" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-2-portrait.avif?updatedAt=1755054117902" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-2-landscape.avif?updatedAt=1755054117888" as="image" type="image/avif" />
+<!--Above is for drakengard-2 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-3-portrait.avif?updatedAt=1755425287746" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-3-landscape.avif?updatedAt=1755425287711" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-3-portrait.avif?updatedAt=1755054119757" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-3-landscape.avif?updatedAt=1755054118255" as="image" type="image/avif" />
+<!--Above is for drakengard-3 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-automata-portrait.avif?updatedAt=1755425288034" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-automata-landscape.avif?updatedAt=1755425287952" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-automata-portrait.avif?updatedAt=1755054120111" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-automata-landscape.avif?updatedAt=1755054119893" as="image" type="image/avif" />
+<!--Above is for nier-automata preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-portrait.avif?updatedAt=1755425288262" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-landscape.avif?updatedAt=1755425288065" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-portrait.avif?updatedAt=1755054119901" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-landscape.avif?updatedAt=175505411991" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/d3/drama-cd.avif" as="image" type="image/avif" />
+<!--Above is for nier preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-portrait.avif?updatedAt=1755425288268" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-landscape.avif?updatedAt=1755425288207" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnatlion-landscape.avif?updatedAt=1755054120136" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnation-landscape.avif?updatedAt=1755054120067" as="image" type="image/avif" />
+<!--Above is for nier-reincarnation preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/fusion.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/elimination.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/impulse.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/hatred.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/author.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/reality.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/elimination-2.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/the-last-story.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/sinoalice.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/dod3collabe.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/desire.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/sinoalice/parrah-noya-music-jamboree.avif" as="image" type="image/avif" />
+<!--Above is for sinoalice preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-portrait.avif?updatedAt=1755425288268" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-landscape.avif?updatedAt=1755425288207" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnatlion-landscape.avif?updatedAt=1755054120136" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnation-landscape.avif?updatedAt=1755054120067" as="image" type="image/avif" />
+<!--Above is for sinoalice preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/misc/roundtable.avif" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/misc/theweeklyonore.avif" as="image" type="image/avif" />
+<!--Above is for misc preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-all-portrait.avif?updatedAt=1755425287875" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-all-landscape.avif?updatedAt=1755425288061" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-all-portrait.avif?updatedAt=1755054119856" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-all-landscape.avif?updatedAt=1755054120175" as="image" type="image/avif" />
+<!--Above is for drakengard-all preloading-->
+<!--Above is for misc preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/tsnd/tsnd-manga.avif" as="image" type="image/avif" />
+<!--Above is for tsnd- preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/genpei.avif?updatedAt=1782890871041" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/shogunate-tournament.avif?updatedAt=1782890871090" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/tokyo-rein.avif?updatedAt=1782890871092" as="image" type="image/avif" />
+
+<!--Above is for bakuken preloading-->

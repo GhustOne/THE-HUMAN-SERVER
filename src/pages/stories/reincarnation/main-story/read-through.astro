@@ -1,0 +1,119 @@
+---
+
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<title>NieR Re[in]carnation</title>
+<p class="title"><a href="/stories/reincarnation/main-story/read-through/his-body-rust">
+    His Body, Rust<img class="art" src="https://i.imgur.com/Pl1Cboq.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/what-was-lost">
+    What Was Lost<img class="art" src="https://i.imgur.com/PKv8ACG.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/determined-hearts">
+    Determined Hearts<img class="art" src="https://i.imgur.com/mqPWjt0.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/this-violent-fleeting-world">
+    This Violent, Fleeting World<img class="art" src="https://i.imgur.com/xir84xH.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/the-distant-peak">
+    The Distant Peak<img class="art" src="https://i.imgur.com/fGliHxq.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/redemption-black">
+    Redemption: Black<img class="art" src="https://i.imgur.com/9XLxVhS.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/priSOner">
+    priSOner<img class="art" src="https://i.imgur.com/pda2nxa.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/liberator">
+    Liberator<img class="art" src="https://i.imgur.com/M67M63p.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/a-cold-and-hollow-silence">
+    A Cold and Hollow Silence<img class="art" src="https://i.imgur.com/TDUyOdp.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/the-reluctant-hero">
+    The Reluctant Hero<img class="art" src="https://i.imgur.com/dolkq05.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/echoes-in-the-heart">
+    Echoes in the Heart<img class="art" src="https://i.imgur.com/msUDdLy.png"></a></p>
+    <p class="title"><a href="/stories/reincarnation/main-story/read-through/redemption-white">
+    Redemption: White<img class="art" src="https://i.imgur.com/DT7y2v0.png"></a></p>
+    <p class="menu" id="backButton"><a href="/stories/reincarnation/main-story">Back</a></p>

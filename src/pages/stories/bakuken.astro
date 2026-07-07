@@ -1,0 +1,139 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Bakuken</title>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/bakuken-portrait.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/bakuken-landscape.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/bakuken-portrait.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/bakuken-landscape.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    }
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+<div class="over">
+<div class="Guide">
+<p class="title"><a href="https://youtu.be/Qc26R-2Gnn0?si=qAbVgZVpIEaXYlEN">
+    Shogunate Tournament<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/shogunate-tournament.avif"></a></p>
+<p class="title"><a href="https://youtu.be/17X0Jh1IOng">
+    Tokyo Reincarnation Death Match • Rematch<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/tokyo-rein.avif"></a></p>
+<p class="title"><a href="https://youtu.be/DZpRRA0Oa4Y">
+    Genpei Final Battle (Day Performance)<img class="art" src="https://ik.imagekit.io/closesttopurple/avif/650px/bakuken/genpei.avif"></a></p>
+
+</div>
+</div>
+<p class="para">All subtitles done by <a href="/credits/people/mint"><u>mint</u></a>. Refer to the <u><a href="https://wiki.thehumanserver.org/index.php/Bakuken">wiki</a></u> (W.I.P.) for more information.</p>
+
+<p class="menu" id="backButton"><a href="/stories">Back</a></p>

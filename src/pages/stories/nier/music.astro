@@ -1,0 +1,107 @@
+---
+
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Music</title><style>  @media  (prefers-color-scheme: dark){
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+
+  }</style>
+
+    <p class="title">Recommended music to listen to while you read.</p>
+<p class="title">YouTube Music</p>
+<p class="para"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mHFYLgtn-xOszI1LUkL8FvKWyebowGp8o&si=FxVNWiikk-CL3OYX"><u>NieR Gestalt & NieR Replicant Original Soundtrack</u></a></p>
+<p class="para"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mJE7pgIgW1ltft7TH0jSAife6q2-vjRsg&si=Kx3tLvkfZ1M24OTy"><u>NieR Gestalt & Replicant 15 Nightmares & Arrange Tracks</u></a></p>
+<p class="para"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mbLLUdyBvrQv1E671eJIazqH27TNDHX6Q&si=YT5FX6NihZSXhny1"><u>Nier Gestalt & Replicant Piano Collections </u></a></p>
+<p class="title">Spotify</p>
+<p class="para"><a href="https://open.spotify.com/album/5EvfMZYvdWB2XPZT0IvcyI?si=QrDB-5tXSr2x8k2PfPi-uQ"><u>NieR Gestalt & NieR Replicant Original Soundtrack</u></a></p>
+<p class="para"><a href="https://open.spotify.com/album/1jlsHsn21rwt7lErsuDIgW?si=84lQcLnMQt-A7Jxt1mZfCQ"><u>NieR Gestalt & Replicant 15 Nightmares & Arrange Tracks</u></a></p>
+<p class="para"><a href="https://open.spotify.com/album/1wMSQYLmTQs3BsIs9MUr6x?si=Cwchcg1dRgaT6Qs4rRnIxw"><u>Nier Gestalt & Replicant Piano Collections </u></a></p>
+<p class="menu" id="backButton"><a href="/stories/nier">Back</a></p>

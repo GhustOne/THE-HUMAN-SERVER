@@ -1,0 +1,151 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<style>
+    img{
+        @media screen and (orientation: portrait)
+{
+    width: 80%;
+    height: 80%;
+}
+    }
+    img{
+        @media screen and (orientation: landscape)
+{
+    width: 35%;
+    height: 35%;
+}
+    }
+        body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+
+</style>
+<title>World Map</title>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<p style="margin-top: 1cm; font-size: 300%;">World Map</p>
+<img src="https://i.imgur.com/ZUHl4lz.png" width="60%" height="60%">
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a href="/credits/people/mrkusabi">MrKusabi</a></p>
+<p class="title"><b>The Land of
+Forests</b></p>
+<p class="para">The country ruled by the fourth
+Intoner, Three.</p>
+<p class="para">A densely forested land blessed with
+an abundance of nature. A place where many non-human races, such as
+fairies and elves, live in great numbers. From the beautiful forests
+filled with many kinds of trees to fog-enshrouded locations that seem
+to refuse outsiders, everywhere one looks the view changes.</p>
+<p class="title"><b>The Land of
+Mountains</b></p>
+<p class="para">The country ruled by the fifth
+Intoner, Four.</p>
+<p class="para">A region of steep mountains. Atop
+the summit lies an impregnable fortress. With frigid, snowy mountains
+and canyons between sheer cliffs, the landscape is harsh for human
+habitation.</p>
+<p class="title"><b>The Cathedral City</b></p>
+<p class="para">Ruled by the second Intoner, One.</p>
+<p class="para">Buildings erected by an ancient,
+advanced civilization stand in ruins like tombstones. The
+headquarters of this world's most prestigious church exists there.</p>
+<p class="title"><b>The Land of Sands</b></p>
+<p class="para">The country ruled by the third
+Intoner, Two.</p>
+<p class="para">A region of desert, the climate of
+this country is so harsh that even standing is exhausting. Legends
+say a civilization once flourished there, the ruins of which spread
+out underground.</p>
+<p class="title"><b>The Land of Seas</b></p>
+<p class="para">The country ruled by the sixth
+Intoner, Five.</p>
+<p class="para">A country surrounded by the vast
+ocean. Zero hid herself for a year at a place within this land. The
+story begins here. A country that boasts a vast fleet alongside the
+submerged cities of a former civilization.</p>
+<p class="menu"><a href="/stories/drakengard-3/story-side/character-introductions">Next Chapter</a></p>
+<p class="menu" id="backButton"><a href="/stories/drakengard-3/story-side">Back</a></p>

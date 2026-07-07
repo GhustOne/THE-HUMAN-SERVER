@@ -1,0 +1,115 @@
+---
+
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>People</title>
+
+    <div class="over" style="max-width: 80vw;">
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/AbstractSavior"class="menu-c">AbstractSavior</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/accordian"class="menu-c">accordian</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/accordstome" class="menu-c">accordstome</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/barnabism"class="menu-c">Barnabis,</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/barry-esmail"class="menu-c">Barry Esmail</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/closesttopurple" class="menu-c">closesttopurple</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/dr-mint"class="menu-c">DrMint</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/kestrel"class="menu-c">Kestrel</a></p>
+
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/louise"class="menu-c">Louise</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/Maruisalone" class="menu-c">maru</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/mint"class="menu-c">Mint</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/mrkusabi"class="menu-c">MrKusabi</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/r3incarnationan" class="menu-c">r3incarnationan</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/seviryn"class="menu-c">Seviryn</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/spffn"class="menu-c">spffn</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a href="/credits/people/zorb1s" class="menu-c">Zorb1s</a></p>
+</div>
+<p class="menu" id="backButton"><a href="/credits">Back</a></p>

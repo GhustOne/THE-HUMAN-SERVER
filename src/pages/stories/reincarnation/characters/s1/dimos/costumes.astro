@@ -1,0 +1,208 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Dimos's Costumes</title><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+    .img-special{
+        -webkit-filter: brightness(100%);
+        padding: 0%;
+        max-width: 144px;
+        max-height: 144px;
+    }
+    img:hover{
+        -webkit-filter: brightness(70%);
+        transform: scale(98%);
+    }
+
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+</style>
+<p style="margin-top: 1cm; font-size: 300%;">Dimos's Costumes</p>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/departed-gunman"><img class="img-special" src="https://i.imgur.com/14S6mw5.png" loading="lazy"><p class="title">Departed Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/false-guardian-gunman"><img class="img-special" src="https://i.imgur.com/FVw4Hm5.png" loading="lazy"><p class="title">False Guardian Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/dissenting-gunman"><img class="img-special" src="https://i.imgur.com/IKVxgeF.png" loading="lazy"><p class="title">Dissenting Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/guardian-gunman"><img class="img-special" src="https://i.imgur.com/tsJe7k3.png" loading="lazy"><p class="title">Guardian Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/new-years-gunman"><img class="img-special" src="https://i.imgur.com/UyE3aqz.png" loading="lazy"><p class="title">New Year's Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloody-gunman"><img class="img-special" src="https://i.imgur.com/xv3jSvH.png" loading="lazy"><p class="title">Bloody Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abyssal-gunman"><img class="img-special" src="https://i.imgur.com/DGh3IrY.png" loading="lazy"><p class="title">Abyssal Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/fractured-gunman"><img class="img-special" src="https://i.imgur.com/OdB60G3.png" loading="lazy"><p class="title">Fractured Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloodless-gunman"><img class="img-special" src="https://i.imgur.com/fIKK2vO.png" loading="lazy"><p class="title">Bloodless Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/celebratory-gunman"><img class="img-special" src="https://i.imgur.com/ILSfnA9.png" loading="lazy"><p class="title">Celebratory Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abstract-gunman"><img class="img-special" src="https://i.imgur.com/Zf5wBOU.png" loading="lazy"><p class="title">Abstract Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/summer-gunman"><img class="img-special" src="https://i.imgur.com/dhHUZeM.png" loading="lazy"><p class="title">Summer Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/reborn-automaton"><img class="img-special" src="https://i.imgur.com/xp6GyHk.png" loading="lazy"><p class="title">Reborn Automaton</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/f-h-automaton"><img class="img-special" src="https://i.imgur.com/C72hrLJ.png" loading="lazy"><p class="title">Frozen Heart Automaton</p></a></div>
+</div>
+</div>
+<br><br><br><br>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters/s1/dimos">Back</a></p>

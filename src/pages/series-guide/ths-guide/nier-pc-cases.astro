@@ -1,0 +1,136 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>More Information</title>
+<style>
+        @media screen and (orientation: portrait)
+{
+img{
+    width: 80%;
+    height: 80%;
+    }
+    .title{
+        text-align:left;
+    }
+}
+
+@media screen and (orientation: landscape)
+{
+img{
+    width: 375px;
+    height: 250px;
+}
+}
+#cen{
+    text-align: center;
+}
+.para{
+    margin-bottom: 2%;
+}
+.title{
+    margin-bottom: 2%;
+}
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<img src=https://i.imgur.com/rIdPzVy.png">
+<p class="title" id="cen">Where to find it?</p>
+<p class="title">There were transcriptions on the cases, containing lore.</p>
+<p class="title">NieR Replicant PC Case:</p>
+<p class="para"><strong>2021 A.D.</strong> A certain manufacturer releases a high-spec personal computer. This model of PC, designed to receive perpetual updates via the network, is soon adopted across the globe.</p>
+<p class="para"><strong>2025 A.D.</strong> These PCs, now spread the world over, begin to link up and share data as part of a neural-networking experiment conducted by the manufacturer without the knowledge of its users.</p>
+<p class="para"><strong>2032 A.D.</strong> Large-scale data breaches and acts of cyberterrorism are carried out over the network, during which time information regarding Replicant technology is leaked. The experiment is soon halted, and the computers stop receiving updates.</p>
+<p class="para"><strong>3021 A.D.</strong> A thousand years after the experiment, consciousness data from these computers is detected on the network. The Collection and merging of this data is performed by the quantum server located in the Forest of Myth.</p>
+<p class="title">NieR:Automata PC Case:</p>
+<p class="para"><strong>4198 A.D.</strong> Humanity's extinction is confirmed. All records relating to humans are moved to maximum-pirority folders, and backups are sent to regional quantum servers for safekeeping.</p>
+<p class="para"><strong>5012 A.D.</strong> An Attack by aliens from outer space is recorded. Numerous buildings and androids are destroyed, and some quantum servers are catastrophically damaged.</p>
+<p class="para"><strong>5155 A.D.</strong> Machine lifeforms created by these unidentified alien visitors launch an ark into space, resulting in a new divergence. An attempt is then made to sync up with servers from the past.</p>
+<p class="para"><strong>2021 A.D.</strong> Synchronization with past server is successful. As the original network was small and designed for personal use, expansion will be required. – Accord</p>
+<p class="menu" id="backButton"><a href="/series-guide/ths-guide-main">Back</a></p>
