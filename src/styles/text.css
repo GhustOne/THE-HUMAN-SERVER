@@ -9,15 +9,11 @@ p{
   }
 @font-face{
   font-family: "Angelic-Script";
-  src: url(ANGELIC.TTF)
+  src: url(AngelicAgrippaRegular.otf)
 }
 @font-face{
   font-family: "Life-Regular";
   src: url(Life-Regular.otf)
-}
-@font-face{
-  font-family: "Aptos-Display";
-  src: url(Aptos-Display.tff)
 }
   .logo{
     display: block;
