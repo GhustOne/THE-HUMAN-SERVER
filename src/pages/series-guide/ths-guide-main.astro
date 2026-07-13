@@ -68,14 +68,17 @@ div{
         text-indent: 0em;
 }
 }
+.img-special{
+max-width: 40vw;
+} 
  .img-game{
   border: thick solid red;
  }
-
-.media-card{
-  padding: 8px;
+.Guide{
+  gap:0px;
 }
-@media (min-width: 1201px)  { .Guide { grid-template-columns: repeat(3, 1fr);} }
+@media (max-width: 1200px)  { .img-special{ max-width: 35vw;} .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (min-width: 1201px)  { .Guide { grid-template-columns: repeat(2, 1fr);} }
 @media (min-width: 1919)  { .Guide { grid-template-columns: repeat(5, 1fr);} }
 </style>
 <nav class="menu-container">

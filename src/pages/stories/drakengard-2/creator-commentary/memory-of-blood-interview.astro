@@ -1,0 +1,625 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout>
+<title>Memory of Blood Interview</title>
+<style>
+
+
+    @media screen and (orientation: portrait){
+        #sidenav {
+            display: none;
+        }
+    }
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+
+    img{
+      max-width: 80vw;
+    }
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+  #shiba {
+  grid-template-columns: repeat(2, 1fr);
+}
+</style>
+<p style="margin-top: 1cm; font-size: 300%;"><strong>Memory of Blood Interview:</strong></p>
+<p class="title-special title-box">This interview was released 2005/11/25.</p>
+<p style="margin-top: 0.4cm; font-size: 200%;">Translator: <a data-astro-prefetch="load" href="/credits/people/barnabism"><u>Barnabism</u></a><br>Source: <a data-astro-prefetch="load" href="/series-guide/ths-guide/dod-2-memory-of-blood"><u>here.</u></a><br>Original link: <a href="https://www.tumblr.com/dod2-mob-tl-project"><u>here.</u></a></p>
+<p class="para"><b>WARNING:</b> I didn't receive explicit permission for this, like the other translations, as Barnabism has seemingly disappeared off of the internet. I considered us friends, so I'm gonna keep this up until further notice as I believe they would've been okay with it.</p>
+<div class="over"><img src="https://ik.imagekit.io/closesttopurple/bg/01.jpg?updatedAt=1783903093631"></div>
+<p class="title-special title-box">Pictured: Taro Hasegawa, Takamasa Shiba, Akira Yasui, and Kimihiko Fujisaka</p>
+<p class="para">We asked the four main staff about their feelings towards this work and a never-before-seen look into the stories regarding its development!</p>
+<p style="margin-top: 0.4cm; font-size: 165%;">The Concept of Drakengard 2</p>
+<p class="title-special title-box"><br>&mdash;It's been about four months since the release of
+Drakengard 2 (Which from here on will be referred
+to as "2"), but what has the response been from its
+players?<br><br></p>
+<p class="para"><b>Mr. SHIBA</b> &mdash; (Title omitted hereafter): There seems to be mixed
+opinions about the story and the characters, but the overall
+response isn't too bad.</p>
+<p class="para"><b>Mr. YASUI</b> &mdash; (Title omitted hereafter): Yes, the base concept for
+2 was to make it an easy-to-follow game. In 1, the story
+branched out from the middle, making to difficult for some
+players to grasp the content, and there were parts in where it's
+production team deliberately left things out to make the setting
+more difficult to understand. In order to improve upon these
+issues in 2, we used language that was as easy to understand as
+possible, and created a story that followed in a straight path.
+Even so, this ease of understanding has cause a bit of
+controversy among players.</p>
+<p class="title-special title-box">&mdash;What do you mean by that?</p>
+<p class="para"><b>SHIBA</b> &mdash; For those who played and enjoyed the dark and vague
+atmosphere of 1, 2 seemed a bit too simple to them. It doesn't
+seem like "Drakengard" to them.</p>
+<p class="para"><b>YASUI</b> &mdash; On the other hand, for people who were going to be
+introduced to the series the first time through 2, I thought it
+would be better to make it as easy to understand as possible for
+them. As far as the story is concerned, I didn't want it to be as
+dark as 1, but rather incorporate the taste of traditional RPGs
+into a style and setting like Drakengard's.</p>
+<p class="title-special title-box">&mdash;How early did the initial plans for Drakengard 2
+start?</p>
+<p class="para"><b>SHIBA</b> &mdash; Quite early! Immediately after the release of 1, I was
+already trying to convince the staff.</p>
+<p class="para"><b>Mr. HASEGAWA</b> &mdash; (Title omitted hereafter): Shortly after 1 was
+released, I remember feeling a little bit excited to see what
+appeared to be a proposal for 2 on the desk of a high-ranking
+person at the company. I was thinking to myself "Yes, let's do
+this again!"</p>
+<p class="para"><b>YASUI</b> &mdash; At first, I never would have imagined that I would be
+given the responsibility of directing the project.</p>
+<p class="para"><b>SHIBA</b> &mdash; When I spoke to him about it, he was really surprised!
+(Laughs)</p>
+
+<p class="para"><b>YASUI</b> &mdash; It was something that had never crossed my mind! But
+thanks to him, I think I was able to fill in almost all the parts
+that didn't fully live up to expectations in 1, or that I couldn't
+talk about.</p>
+<p class="title-special title-box">&mdash;If one thing's for certain, it's that the story ended
+in a way that could be considered "A perfect
+resolution."</p>
+<p class="para"><b>SHIBA</b> &mdash; There are many RPG sequel titles that follow the
+atmophere of the original work, even as the story and main
+characters change completely. Of course, while that's a perfectly
+valid line of thought, it was something I definitely didn't want to
+do with the Drakengard series.</p>
+<p class="para"><b>YASUI</b> &mdash; The main premise when producing this sequel was to
+bring the story to a conclusion. It was decided from the very
+beginning that it would take place in a time when the characters
+from the previous work were still around.</p>
+<p class="para"><b>SHIBA</b> &mdash; One of the earlier concepts was to have either Manah or
+Angelus serve as the main character.</p>
+<p class="para"><b>Mr. FUJISAKA</b> &mdash; (Title omitted from here): In the very early stages,
+there was a plan to have Angelus be the main character. The
+story would have been about raising Angelus, who would be
+reincarnated as a young girl in her next life. Unfortunately, this
+plan got rejected as its atmosphere was far too different than
+that of 1's. So, personally speaking, I was a little happy to see it
+revived as an initial concept project for this artbook materials
+collection.</p>
+<p class="title-special title-box">&mdash;As a big fan of 1, I would also have liked to see
+something like that idea<small><sup id="note-a1"><a href="#note-a2"><span style="color: #6AC3F2;">(1)</span></a></sup></small> for Drakengard.</p>
+<p class="para"><b>SHIBA</b> &mdash; There were many other concepts as well. As a matter of
+fact, we even went to a conference camp <small><sup id="note-b1"><a href="#note-b2"><span style="color: #6AC3F2;">(2)</span></a></sup></small> together to come up
+with a plan! We did this with 1, as well. However, that one was ...
+Well? To be honest, it was pretty difficult, wasn't it?</p>
+<p class="para"><b>YASUI</b> &mdash; Oh, it was definitely pretty intense. (Laughs) But the
+conference camp for 2 was held at a certain training centre in
+Zushi, in the Kanagawa Prefecture. It was a really isolated island,
+we thought, "Is this really still the Kanagawa Prefecture !? "</p>
+<p class="para"><b>FUJISAKA</b> &mdash; However, the location wasn't too great, either. When
+I was there, I felt like I was still somehow trapped within the
+company.</p>
+<p class="para"><b>SHIBA</b> &mdash; That's because the person in charge of organising the
+event was Iwasaki<small><sup id="note-c1"><a href="#note-c2"><span style="color: #6AC3F2;">(3)</span></a></sup></small> (Laughs). I was the organiser for the
+boarding house when it was the first game.</p>
+<p class="para"><b>YASUI</b> &mdash; Well, thanks to all of you I was able to concentrate on
+the planning conferences all the way through! Because of that, I
+feel like I was able to come up with some ideas. I think it was at
+that training hall that 2 really started to take off.</p>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; margin: 4%;">
+<div class="over"><img style="max-width: 50vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/02.jpg"></div>
+<p class="para">Square Enix's 10th Development Division and 9th Producer Development Divison</p>
+<p class="title">柴 貴正&nbsp;&nbsp;Shiba Takamasa</p>
+<p class="para" style="font-size:20px;margin: 16px;">"We aimed to make the game easier to
+understand so that it could be enjoyed by
+everyone."</p>
+</div>
+</div>
+<p style="margin-top: 0.4cm; font-size: 165%;">The Main Character Whose "Normalcy" is "Different"</p>
+<p class="title-special title-box">&mdash;Among the many unique characters that appear in
+the Drakengard series, Nowe, the main character,
+feels quite different, doesn't he?</p>
+<p class="para"><b>YASUI</b> &mdash; The character of Nowe is quite unlike any other character
+within Drakengard, yes.</p>
+<p class="para"><b>SHIBA</b> &mdash; He's very "normal". Many characters in Drakengard are
+"Different", for better or for worse, but Nowe is the only one who
+sets himself apart in his normalcy.</p>
+<p class="para"><b>YASUI</b> &mdash; His overall character is very modernistic, and I think
+that's why it's so widely said that he doesn't fully feel like he's
+from the Drakengard series.</p>
+<p class="para"><b>SHIBA</b> &mdash; It's because Nowe is such an ordinary-feeling character
+that he begins to feel out of place when surrounded by so many
+unordinary characters. If anything, even though he's supposed to
+be the most normal one of the cast, he ends up looking the
+strangest! But even so, it seems this ended up being a
+disappointment to fans who were expecting a protagonist like the
+first Drakengard. He seems to be hated quite a bit, and I feel sorry
+for him. Ahh, but there is a part of me that intended to make his
+character that way.</p>
+<p class="title-special title-box">&mdash;What do you mean by that?</p>
+<p class="para"><b>YASUI</b> &mdash; I think the beginning of his story is quite "Empty". Rather
+than fighting out of his own will, he seems to be heavily influenced
+by those around him. He fights because his superior, Gismor, tells
+him to fight. And then he meets someone he cares about like
+Manah, who says she's going to break the Keys to the Seal, so he
+helps her. As the Newbreed, he possesses some of the strongest
+powers in the series, but he wields his sword without having found
+a reason to fight &mdash; when you think about it, that's a horrifying
+concept.</p>
+<p class="para"><b>SHIBA</b> &mdash; I was hoping players would feel unsettled and averse to
+these aspects of Nowe. That Nowe, who simply fights and does as
+he's told without thinking too deeply about the right or wrong or
+even his reason for fighting, might actually be the worst person of
+the cast.</p>
+<p class="para"><b>YASUI</b> &mdash; There were some parts of Nowe's personal development
+that couldn't fully be fleshed out in the game alone, but Ms.
+Eishima did a wonderful job of laying it out in the novel adaptation.</p>
+<p class="para"><b>SHIBA</b> &mdash; For those who are interested, I would recommend reading
+the novel adaptation to experience the true charm of Nowe's
+character.</p>
+<p class="para"><b>YASUI</b> &mdash; On a similar note, doesn't Nowe's personality
+have some similarities to Yasui's? Could this be the
+fate of all the Drakengard protagonists? (Laughs)</p>
+<p class="para"><b>SHIBA</b> &mdash; Oh, they're similar! I thought so too. Caim in
+1 is like Yoko<small><sup id="note-d1"><a href="#note-d2"><span style="color: #6AC3F2;">(4)</span></a></sup></small> and Nowe is like Yasui. (Laughs)</p>
+<p class="para"><b>YASUI</b> &mdash; Is that so? Well, if I'm being honest, I actually
+thought that several times when I was developing him. I
+often worried that it would end up like that.</p>
+<p class="title-special title-box">&mdash;Maybe that's why Yasui has such a deep
+attachment to Nowe. So in that case, what
+do you think of the game's heroine, Manah?</p>
+<p class="para"><b>YASUI</b> &mdash; Manah, in contrast to Nowe, had a rather
+smooth development. Her character was already
+well-established in 1, and by the time of 2, she hasn't
+changed much.</p>
+<p class="para"><b>SHIBA</b> &mdash; As the story progresses, you'll see that even
+by the time 2 takes place, the "Nameless being = God"
+still exists within her heart. She's a person with serious
+mental instability who's being treated as if she's a saint
+and is fighting in a war. There are parts in the story
+where I wanted players to feel the sense of danger and
+discomfort to be had in that. But as you might guess,
+she doesn't seem to be well-liked by fans, just like
+Nowe...</p>
+<p class="para"><b>YASUI</b> &mdash; When we were working on the story and
+characters, Shiba and I decided on the main image from
+the start: "The main character grows from a boy to an
+adult while being guided by a beautiful older woman" -
+something like that.</p>
+<p class="para"><b>SHIBA</b> &mdash; Guided by Manah, who is like an older-sister
+type character, Nowe, a young boy still unable to
+decide his own path in life, grows little by little. The
+story of 2 is also a story about the growth of this boy.</p>
+<p class="para"><b>YASUI</b> &mdash; Nowe, who was always being guided by Manah,
+eventually finds a reason to fight of his own will. Not
+for something grand like "Protecting the harmony of
+the world", but something very personal&mdash;his love for
+Manah. I think that facet of human nature is something
+very typical for Drakengard as a whole.</p>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; min-width: 60vw; margin: 4%;">
+<div class="over"><div class="Guide" id="shiba"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/03.jpg"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/04.jpg"></div></div>
+<p class="title">Shiba's Work</p>
+<p class="para" style="font-size:20px;margin: 16px;">As the main producer of the
+series, he handles all manner
+of tasks, from game planning
+and design to minor chores.
+There were times he got too
+involved with the work during
+production, to where he ended
+up getting scolded! Based on
+his belief that "The level of
+quality a game holds is
+directly proportional to the
+love the staff has for it", he
+loves Drakengard to the
+marrow of his bones.</p>
+</div>
+</div>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; margin: 4%;">
+<div class="over"><img style="max-width: 50vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/05.jpg"></div>
+<p class="para">Cavia Development Headquarters &mdash; Development Department &mdash; Creative Director</p>
+<p class="title">安井 章&nbsp;&nbsp;Yasui Akira</p>
+<p class="para" style="font-size:20px;margin: 16px;">"Nowe is like my alter ego, so
+I'm very attached to him."</p>
+</div>
+</div>
+<p style="margin-top: 0.4cm; font-size: 165%;">The Side Characters Who Support the Story</p>
+<p class="title-special title-box">&mdash;What about the other heroine, Eris?</p>
+<p class="para"><b>YASUI</b> &mdash; The concept of "the Goddess" already existed from the
+start, but other than that, she didn't have much of a strong
+personality.</p>
+<p class="para"><b>SHIBA</b> &mdash; At first, she lacked a lot of the impact Manah had. This
+actually wasn't just an issue with Eris, but at some point every
+character was given the order to "inject more poison." Well ... I
+was the one who ordered it. (Laughs)</p>
+<p class="para"><b>YASUI</b> &mdash; We say "Poison", but because there was a larger cast
+than in 1, each character's individuality tended to be weakened.
+The order was to do something about that.</p>
+<p class="para"><b>SHIBA</b> &mdash; And the demon girl who was set to burn Manah at the
+stake was the result. I think that the main essence of Drakengard
+is that the story is woven together by characters who have a deep
+darkness hidden within their hearts like that.</p>
+<p class="title-special title-box">&mdash;When you think about it, the cast who makes up
+the Knights of the Seal, the main antagonists, are all
+characters that are very typical of the Drakengard
+series.</p>
+<p class="para"><b>SHIBA</b> &mdash; That may be so. As a matter of fact, its the antagonists
+who are sometimes more popular than the main characters. The
+secret to that popularity might lie in the fact that they're
+especially easy to understand and have a more extreme
+personality.</p>
+<p class="para"><b>YASUI</b> &mdash; Not to mention, they're all pact-partners, so there's no
+way they could have normal personalities. (Laughs)</p>
+<p class="para"><b>SHIBA</b> &mdash; Take for example the antagonist General Gismor &mdash; he
+has a look that at first glance makes it easy to tell that he'll be a
+boss later down the line. In a sense, he symbolises what we
+wanted to do with 2. The very concept of 2, "Easy to
+understand", is reflected in the points of his character.</p>
+<p class="para"><b>FUJISAKA</b> &mdash; Similarly, when I designed Yaha, I designed him to be
+a typical narcissist &mdash; a character who would probably go and
+describe their own self as "Beautiful". But even though his
+character is supposed to be one who is attracted to both men
+and women in the story, people who are attracted to both
+genders in real life are usually not of this type. Like Gismor, he
+also largely captures the image of "Bewitching".</p>
+<p class="title-special title-box">&mdash;Hanch's design also has good taste.</p>
+<p class="para"><b>SHIBA</b> &mdash; hanch seems to be popular, doesn't she? I wonder
+why that is?</p>
+<p class="para"><b>FUJISAKA</b> &mdash; She's a character I had a lot of trouble designing. It
+was exceptionally difficult to express the concept of a woman
+who was originally beautiful, but lost her charm as a result of
+her pact. As a last resort, I tried giving her certain features
+like dark circles under her eyes and the detail that she was
+always dripping with water.</p>
+<p class="para"><b>SHIBA</b> &mdash; This idea of always being soaking wet was very popular
+among the production staff. Maybe it was attraction instead?</p>
+<p class="para"><b>YASUI</b> &mdash; Just to mention, it's not spoken of in the game, but
+Hanch actually has an older sister who is even more beautiful
+than her and a nice personality. She's the type of woman that
+people really like. Hanch, on the other hand, was so cute when
+she was younger that she was called "Sunsmile". However,
+this was due to her cunning and careful calculation. She was,
+for one reason or another, jealous of her older sister, who
+always emitted a dazzling and radiant charm. My interpretation
+is that such ferocity towards her sister was further amplified
+due to her pact, and that her inner charm was lost, rather than
+her outward appearance.</p>
+<p class="title-special title-box">&mdash;It seems that Hanch, Yaha, and Zhangpo each
+have their own character colours of blue, yellow,
+and red. Why so?</p>
+<p class="para"><b>FUJISAKA</b> &mdash; This resulted from more of an issue with the game
+than of design. It was known from the start that these three
+characters wouldn't appear in any FMVs. Because of this, we
+were able to set the colours quite freely, since if a character
+with colours that were too bright were to appear in a cutscene,
+that character would unnecessarily stand out or the overall
+colour would have to be changed. It would prove difficult to
+put these things together. On the other hand, if the colours or
+designs were too subdued, it wouldn't look good on the screen
+at all. There were a lot of things I had to consider because of
+this.</p>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; min-width: 60vw; margin: 4%;">
+<div class="over"><div class="Guide" id="shiba"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/06.jpg"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/07.jpg"></div></div>
+<p class="title">Yasui's Work</p>
+<p class="para" style="font-size:20px;margin: 16px;">He was the main designer
+of the previous game, and
+the director of this one. He
+was deeply involved in the
+construction of the world of
+Drakengard 2.</p>
+<p class="para" style="font-size:20px;margin: 16px;">Furthermore, 2 will mark
+his debut as director! His
+hobby is watching movies,
+but he tends to pay more
+attention to the direction
+and blocking before getting
+too absorbed in the story.</p>
+</div>
+</div>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; margin: 4%;">
+<div class="over"><img style="max-width: 50vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/08.jpg"></div>
+<p class="para">Cavia Development Headquarters &mdash; Development Department &mdash; Graphic Designer</p>
+<p class="title">藤坂 公彦&nbsp;&nbsp;Fujisaka Kimihiko</p>
+<p class="para" style="font-size:20px;margin: 16px;">"We paid special attention to the
+design of the characters and the use of
+colours."</p>
+</div>
+</div>
+<p style="margin-top: 0.4cm; font-size: 165%;">About Your Favourite Characters and Scenes</p>
+<p class="title-special title-box">&mdash;From here, we'd like to ask everyone about their
+favourite characters and scenes. Mr. Shiba, would you
+like to go first?</p>
+<p class="para"><b>SHIBA</b> &mdash; My favourite character is Gismor. First of all, he has the
+best design. I want to give my praise to Fujisaka, that is to say, I
+think this character is the only one who got OK'ed at the first shot.
+After all, Fujisaka's best characters are the old men. (Laughs)</p>
+<p class="title-special title-box">&mdash;Tachiki Fumihiko's voice also fits the character
+perfectly!</p>
+<p class="para"><b>SHIBA</b> &mdash; As expected from a professional like Tachiki, I think it's
+thanks to his rough voice that the whole game came out so solid. Of
+course, I like the character as well! I think it's cool how he sticks to
+his beliefs. That is, even if they are evil.</p>
+<p class="title-special title-box">&mdash;What is your favourite scene?</p>
+<p class="para"><b>SHIBA</b> &mdash; Angelus' and Caim's final scene, of course. I liked it so
+much that I took the scene when it had already been completed and
+reconstructed it to make it even more moving!</p>
+<p class="para"><b>YASUI</b> &mdash; At first, it wasn't a scene that required much effort. There
+weren't any flashback scenes from 1, and the two of them
+disappeared even more abruptly. But, now I think it would have
+been nice to have made that scene even more moving.</p>
+<p class="para"><b>YASUI</b> &mdash; For the fans who have been playing since 1, this was the
+one part that was going to make them cry, so we put a lot of effort
+into it!</p>
+<p class="title-special title-box">&mdash;What is your favourite scene?</p>
+<p class="para"><b>YASUI</b> &mdash; As you might expect, I definitely feel an attachment
+towards Nowe. There are some parts of his character that are
+similar to me &mdash; I like the final battle against Legna! That scene
+where the parent and child talk and fight while expressing their
+feelings to each other is one of my favourite scenes in the series.</p>
+<p class="para"><b>SHIBA</b> &mdash; At first, that scene was much simpler.</p>
+<p class="para"><b>HASEGAWA</b> &mdash; It was flat, by which I mean, the lines didn't come out
+very well. The emotional dialogue at the end came far too late, and
+the story had already been wrapped up and resolved by then.</p>
+<p class="para"><b>YASUI</b> &mdash; That was one of the dilemnas: The better the player, the
+faster they could defeat the boss. In the meantime, we had
+calculated the estimated battle time when creating it, but it still
+relied entirely on the skill of the player.</p>
+<p class="title-special title-box">&mdash;Next up, what do you think, Mr. Fujisaka?</p>
+
+<p class="para"><b>FUJISAKA</b> &mdash; I agree with Yasui. I also quite like Nowe! But the
+best one is definitely the Kelpie! Hasegawa's design was
+amazing!</p>
+<p class="para"><b>HASEGAWA</b> &mdash; Eh, really? That's the first time I've heard
+something like that. (Laughs)</p>
+<p class="para"><b>FUJISAKA</b> &mdash; Really. I really like Ifrit, too.</p>
+<p class="para"><b>HASEGAWA</b> &mdash; Ifrit doesn't even appear in the game! (Laughs)</p>
+<p class="para"><b>SHIBA</b> &mdash; That sounds an awful lot like a Fujisaka thing to say ...
+(Laughs)</p>
+<p class="title-special title-box">&mdash;Do you like the monster designs?</p>
+<p class="para"><b>FUJISAKA</b> &mdash; Yes. I should say, the design of Ifrit was made
+during the production of the first game, so I have a certain
+fondness for it.</p>
+<p class="para"><b>HASEGAWA</b> &mdash; In the end, it was shelved for 1, but it finally saw
+the light of day in 2, which made me happy. The design was
+quite elaborate, with the hand having a cannon that looked
+something like a kamado, so when I finished it, I thought "I
+did it!!"</p>
+<p class="para"><b>FUJISAKA</b> &mdash; However, Zhangpo was killed without it even
+having a chance to appear. (Laughs)</p>
+<p class="para"><b>HASEGAWA</b> &mdash; Yes, that's the role it played in the end, and I
+was disappointed in the way it was handled. Zhangpo was too
+weak...</p>
+<p class="title-special title-box">&mdash;What do you think, Mr. Hasegawa?</p>
+<p class="para"><b>HASEGAWA</b> &mdash; As far as human characters go, I think it would
+have to be Urick. Koyama Rikiya's voice is very gruff, and I
+think it suits the character. And even though the design is
+unbalanced, it's still in good taste.</p>
+<p class="para"><b>FUJISAKA</b> &mdash; Eh, what do you mean?</p>
+<p class="para"><b>HASEGAWA</b> &mdash; Although the area around his upper body is tight,
+his head looks huge because of his mask. That sort of
+imbalance is really cool. If I'm being honest, I get the feeling
+that Fujisaka likes those kinds of designs, but he hasn't had
+much opportunity to draw them until now.</p>
+<p class="para"><b>FUJISAKA</b> &mdash; You're right! I was very particular about that mask.</p>
+<p class="para"><b>SHIBA</b> &mdash; It's interesting how suddenly he takes off that mask.</p>
+<p class="title-special title-box">&mdash;Admittedly, I was quite surprised, as I thought
+there would be more build-up towards Urick's
+true identity.</p>
+<p class="para"><b>HASEGAWA</b> &mdash; There's nothing rough about it, and I rather like
+it's graciousness. It's honestly a favourite of mine. As for
+monsters, I like the Holy Dragons! Unlike Legna and Angelus, I get the image of them being
+somewhat soft.</p>
+<p class="para"><b>SHIBA</b> &mdash; If we're talking about monsters, then I really like
+Unknown. Especially the hanging Unknown you fight during
+aerial combat!</p>
+<p class="para"><b>YASUI</b> &mdash; The spinning attack makes it excellent.</p>
+<p class="para"><b>SHIBA</b> &mdash; I think the story from Chapter 10 onwards became
+much more exciting thanks to the appearance of that
+monster. The impact it left was breathtaking!</p>
+<p class="para"><b>HASEGAWA</b> &mdash; I wanted to somehow create an enemy that was
+comparable to the child angels from the previous game.
+Thanks to all of you, I think we were able to create a creepy
+enemy with a different approach!</p>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; min-width: 60vw; margin: 4%;">
+<div class="over"><div class="Guide" id="shiba"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/09.jpg"><img style="max-width: 30vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/010.jpg"></div></div>
+<p class="title">Fujisaka's Work</p>
+<p class="para" style="font-size:20px;margin: 16px;">He doesn't just design
+characters for the series, but
+also handles a wide variety of
+designs across the board, from
+the world setting to weapon
+designs and clothing. His
+attention to detail and detailed
+designs are said to sometimes
+bring graphic artists to tears.
+Even after the software release,
+he was one of the people who
+were involved with 2 for the
+longest time, and has made
+illustrations for both the novel
+adaptation and the original
+illustrations for this book.</p>
+</div>
+</div>
+<div class="over">
+<div style="background-color: #373737;   border: thick solid rgba(135, 135, 135, 0.6); max-width: 80vw; margin: 4%;">
+<div class="over"><img style="max-width: 50vw; margin: 12px;" src="https://ik.imagekit.io/closesttopurple/bg/011.jpg"></div>
+<p class="para">Cavia Development Headquarters &mdash; Development Department &mdash; Graphic Designer</p>
+<p class="title">長谷川 太郎nbsp;&nbsp;Hasegawa Taro</p>
+<p class="para" style="font-size:20px;margin: 16px;">"Even though Ifrit finally got to see the light
+of day, I was disappointed to see Zhangpo
+get defeated so quickly."</p>
+</div>
+</div>
+<p style="margin-top: 0.4cm; font-size: 165%;">About the Concepts for the Next Installment</p>
+<p class="title-special title-box">&mdash;So here, I would like to ask you all about your
+ideas for the next game, which fans are probably
+very interested in...</p>
+<p class="para"><b>SHIBA</b> &mdash; I don't have anything to say about this yet. To tell
+the truth, if I were to make a new Drakengard game, I have
+an idea for the kind of form I would like to make it in. When
+I went overseas for work not too long ago, I suddenly got
+the idea on the plane. However, that doesn't actually mean
+the project's been put into production at all so far...<br>
+Unfortunately.</p>
+<p class="para"><b>FUJISAKA</b> &mdash; Personally, I feel like I've exhausted all my ideas
+for Drakengard with 2.</p>
+<p class="para"><b>YASUI</b> &mdash; We all worked on the production of 2 with great
+enthusiasm, determined to deliver the last great sendoff for
+the series. That said, if we were to make a sequel, it might
+have to be a completely new version of Drakengard.</p>
+<p class="para"><b>SHIBA</b> &mdash; If that's the case, how about a Drakengard with no
+dragons?</p>
+<p class="para"><b>HASEGAWA</b> &mdash; That would mean less work for me. (Laughs)</p>
+<p class="para"><b>SHIBA</b> &mdash; It's just a joke, don't worry. But, we started working
+on 2 really soon after finishing the previous game. If you
+think about it like that, I feel like there needs to be some
+kind of recharging period, even if it's just for a while. After
+all, even if I say I want to make something new, it can't get
+started unless all the production team goes "Let's do it!"</p>
+<p class="para"><b>YASUI</b> &mdash; Hey hey, no one said they didn't want to! (Laughs)</p>
+<p class="title-special title-box">&mdash;If you were to make a sequel, you'd have to hold
+that "Conference camp" again, right?</p>
+<p class="para"><b>SHIBA</b> &mdash; If we were, I'd definitely be on board with it. But if so, I
+wonder if it would be better if I was the organiser ...</p>
+<p class="para"><b>YASUI</b> &mdash; I would really like that. (Laughs)</p>
+<p class="title-special title-box">&mdash;Finally, do you have a message you would like to
+give to the fans?</p>
+<p class="para"><b>YASUI</b> &mdash; I'm really, really happy that there are so many people
+getting involved. I hope that people will continue to love the
+Drakengard series even more.</p>
+<p class="para"><b>FUJISAKA</b> &mdash; I'm grateful that even though it's been a long time
+since its release, that there are still passionate fans who
+continue to buy the novel and this collection of concept
+materials. Everyone's comments are very encouraging!</p>
+<p class="para"><b>HASEGAWA</b> &mdash;I'd be happy if this book allows some to see the
+detailed concepts that aren't usually published in magazines,
+and makes them love Drakengard even more.</p>
+<p class="para"><b>SHIBA</b> &mdash; This series, which I've been involved in for about the
+last five years, has come to an end for the time being.
+Personally, I think it's all thanks to the fans that this has
+become a title I feel so fondly of. That said, I think it would be
+great if I could see all those fans again sometime. I don't know if
+it will be through a sequel, a completely new work, or if any of
+that will actually even happen. Until then, I would like everyone
+to play 2 to its fullest.</p>
+<p class="title-special title-box">&mdash;Thank you all very much!</p>
+<p style="margin-top: 0.4cm; font-size: 165%;">Notes</p>
+<p class="para"><sup id="note-a2"><big><a href="#note-a1"><span style="color:#6AC3F2;">1</span></a></big></sup>: Point of production with the initial concepts submitted to the "Drakengard 2" planning
+meeting. The special project at page 108 in this book is based off these initial concepts.</p>
+<p class="para"><sup id="note-b2"><big><a href="#note-b1"><span style="color:#6AC3F2;">2</span></a></big></sup>: Development camp... A conference camp where the development team gathered to
+go over their plans. During the production of the previous game, Mr. Shiba served as the
+organiser for this plan and rented a guesthouse, which has since become a tradition. The
+conference organiser for this work was Mr. Iwasaki.</p>
+<p class="para"><sup id="note-c2"><big><a href="#note-c1"><span style="color:#6AC3F2;">3</span></a></big></sup>: Mr. Iwasaki Takuya... He is the general manager of development and chief producer
+of Cavia Co., Ltd. Like Mr. Shiba, he is heavily invested in the development of the
+Drakengard series.</p>
+<p class="para"><sup id="note-d2"><big><a href="#note-d1"><span style="color:#6AC3F2;">4</span></a></big></sup>: Yoko Taro... Created the atmosphere of the series alongside Mr. Shiba and Mr.
+Iwasaki. While he participated as the creative director for 1, he served in 2 as a video
+editor.</p>
+
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories/drakengard-2/creator-commentary">Back</a></p>
