@@ -92,12 +92,21 @@ import TextLayout from '@layouts/TextLayout.astro';
   </div>
 </nav>
 <title>People</title>
-
-    <div class="over" style="max-width: 80vw;">
+<style>
+.Guide { grid-template-columns: repeat(2, 1fr);}
+@media (max-width: 600px) {
+.Guide { grid-template-columns: repeat(1, 1fr);}
+}
+.menu{
+font-size:calc(100% + 1vw);
+}
+</style>
+    <div class="over">
+      <div class="Guide">
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/AbstractSavior"class="menu-c">AbstractSavior</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/accordian"class="menu-c">accordian</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/accordstome" class="menu-c">accordstome</a></p>
-<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/barnabism"class="menu-c">Barnabis,</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/barnabism"class="menu-c">Barnabism</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/barry-esmail"class="menu-c">Barry Esmail</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/closesttopurple" class="menu-c">closesttopurple</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/dr-mint"class="menu-c">DrMint</a></p>
@@ -111,7 +120,9 @@ import TextLayout from '@layouts/TextLayout.astro';
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/r3incarnationan" class="menu-c">r3incarnationan</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/seviryn"class="menu-c">Seviryn</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/spffn"class="menu-c">spffn</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/surihix" class="menu-c">Surihix</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/weskher" class="menu-c">Weskher</a></p>
 <p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="/credits/people/zorb1s" class="menu-c">Zorb1s</a></p>
+      </div>
 </div>
 <p class="menu" id="backButton"><a data-astro-prefetch="load" href="/credits">Back</a></p>
