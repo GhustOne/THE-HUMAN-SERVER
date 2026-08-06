@@ -1,11 +1,10 @@
----
+.---
 
 import TextLayout from '@layouts/TextLayout.astro';
 ---
 
 <TextLayout>
-</TextLayout>
-<style>    body {
+</TextLayout><style>    body {
   background-color: $bgColor;
   background-size: 6px 6px;
   background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
@@ -37,7 +36,6 @@ import TextLayout from '@layouts/TextLayout.astro';
 }
 }
 </style>
-<title>THS Blog</title>
 <nav class="menu-container">
   <!-- burger menu -->
   <input type="checkbox" aria-label="Toggle menu" />
@@ -93,61 +91,35 @@ import TextLayout from '@layouts/TextLayout.astro';
     </ul>
   </div>
 </nav>
-
+<title>GhustOne</title>
 <style>
-.card {
-   background-color: rgb(29, 29, 29);
-   padding: 40px;
-   margin-left: 1.5%;
-   margin-right: 1.5%;
-   margin-top: 20px;
+  @media screen and (orientation: landscape){
+    .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr) 0.6fr 1.4fr;
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
-@media (prefers-color-scheme: light){
-  .card {
-   background-color: rgb(219, 216, 216);
+
+.div1 { grid-area: 3 / 1 / 5 / 6; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 4 / 3 / 6; max-width: 80vw;}
+
   }
-}
-.border{
-     border: 2 solid;
-	border-image: conic-gradient(from var(--angle), #01EFAC, #01CBAE, #2082A6, #524094, #562A83, #01EFAC) 1;
-  animation: 10s rotate linear infinite;
-}
-@keyframes rotate {
-	to {
-		--angle: 360deg;
-	}
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
 
 
-.Guide {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 12px;
+.title{
+    font-size: 2rem;
+    
 }
 </style>
-<body>
-  <div class="over"><div class="Guide">
-  <div class="row">
-    <div class="card border">
-      <p class="title"><b><i>Discord</i></b></p>
-      <p class="title">I've made a discord, 06/4/2026</p>
-      <p class="para">Join it <u><a href="https://discord.gg/YVxxn3pN3Y">here</a></u>.</p>
-      <p class="para">Hiya! Nice to see you again, it's been a few months. The site is still here, strangely. First of all, regarding the discord, I don't expect it to be used often.  That's okay, I'm just making it in case anyone wanted to request an update, or directly address a bug. I'll probably be mostly talking about my various changes the most, just like the wiki's discord.</p>
-    </div></div>
-  <div class="row">
-    <div class="card">
-      <p class="title"><b><i>THS Gallery - Closure</i></b></p>
-      <p class="title">I shut down the gallery, 19/4/2026</p>
-      <p class="para">Sorry.</p>
-      <p class="para">Hiya! Karis here, Square Enix sent me a DMCA notice for specifically the gallery. It's my first DMCA (let's hope it stays that way), so I just took the subdomain down immediately. I was also notified that <i>Accord's Library</i>, a previous archival site, had their gallery DMCA'd before the main site. That's scary, huh?<br><br> Anyway, nice to meet you.</p>
-    </div></div>
-    </div></div>
-
-<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/">Back</a></p>
-  </body>
+<p class="title">GhustOne</p>
+ <div class="parent">
+<div class="div1"><p class="title">Socials:</p><p class ="menu" style="font-size: 180%;"><a data-astro-prefetch="load" href="https://github.com/GhustOne"><u>GitHub</u></a></p></div>
+<div class="div2"><p class="title">Worked on:</p></div>
+<div class="div3"><p class ="menu" style="font-size: 180%;">Contributed some <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER/pull/2"><u>fixes</u></a>.</p><br></div>
+<div class="div4 over"><img style="padding: 16px; max-width: 60vw;" src="https://avatars.githubusercontent.com/u/71855034?v=4"></div>
+</div> 
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/credits/people">Back</a></p>

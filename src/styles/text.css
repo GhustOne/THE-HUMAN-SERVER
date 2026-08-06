@@ -861,3 +861,23 @@ img{
         animation-name: art;
       animation-duration: 1.2s;
 } 
+     #alert{
+          --bg-size: 400%;
+  --color-one: hsl(0, 99%, 62%);
+  --color-two: #1c6ff5 ;
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
+     }
+     @keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
